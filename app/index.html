@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="life-of-a-story">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -26,7 +26,7 @@
     <![endif]-->
 
     <div class="container">
-      <div class="header">
+      <header class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -34,10 +34,13 @@
         </ul>
         <h3 class="text-primary">Life of a Story</h3>
         <h4 class="text-muted">The stories of our lives add the life to our story</h4>
-      </div>
+      </header>
 
-      <div class="footer">
-      </div>
+      <main ui-view>
+      </main>
+
+      <footer class="footer">
+      </footer>
     </div>
 
     <!-- build:js scripts/vendor.js -->
@@ -67,7 +70,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="scripts/loas.js"></script>
     <!-- endbuild -->
   </body>
 </html>
