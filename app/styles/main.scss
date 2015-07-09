@@ -3,7 +3,10 @@ $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "header";
+
+body {
+  background-color: #f1f1d4;
+}
 
 .browserupgrade {
   margin: 0.2em 0;
