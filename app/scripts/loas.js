@@ -1,4 +1,7 @@
+/* global angular */
 (function(){
+  'use strict';
+
   angular.module('life-of-a-story', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider) {
 
