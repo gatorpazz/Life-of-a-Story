@@ -1,0 +1,28 @@
+{
+  "version": "0.0.0",
+  "homepage": "https://github.com/gatorpazz/Life-of-a-Story",
+  "authors": [
+    "Michael Pascuzzi <gatorpazz@gmail.com>"
+  ],
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "name": "life-of-a-story",
+  "dependencies": {
+    "bootstrap-sass": "3.3.4",
+    "modernizr": "~2.8.1",
+    "angular": "~1.4.2",
+    "angularfire": "~1.1.2",
+    "ui-router": "~0.2.15",
+    "angular-animate": "~1.4.2"
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
+  }
+}
