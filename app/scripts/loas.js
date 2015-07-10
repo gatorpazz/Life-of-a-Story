@@ -13,8 +13,8 @@
         .state('home', {
             url: '/home',
             templateUrl: 'views/home.html',
-            controller: 'loginController',
-            controllerAs: 'login'
+            controller: 'UserController',
+            controllerAs: 'user'
         })
         .state('registration', {
             url: '/registration',
