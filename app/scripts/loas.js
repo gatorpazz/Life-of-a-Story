@@ -13,6 +13,10 @@
         .state('home', {
             url: '/home',
             templateUrl: 'views/home.html'
+        })
+        .state('registration', {
+            url: '/registration',
+            templateUrl: 'views/registration.html'
         });
     });
 angular.module('life-of-a-story').constant('FIREBASE_URL', 'https://life-of-a-story.firebaseio.com/');
