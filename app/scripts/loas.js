@@ -2,7 +2,7 @@
 (function(){
   'use strict';
 
-  angular.module('life-of-a-story', ['ui.router'])
+  angular.module('life-of-a-story', ['ui.router', 'firebase'])
     .config(function($stateProvider, $urlRouterProvider) {
 
       $urlRouterProvider.otherwise('/home');
@@ -12,7 +12,9 @@
         // HOME VIEW WITH LOGIN AND REGISTRATION
         .state('home', {
             url: '/home',
-            templateUrl: 'views/home.html'
+            templateUrl: 'views/home.html',
+            controller: 'UserController',
+            controllerAs: 'user'
         })
         .state('registration', {
             url: '/registration',
