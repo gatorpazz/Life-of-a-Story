@@ -1,0 +1,9 @@
+{
+  "firebase": "life-of-a-story",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
