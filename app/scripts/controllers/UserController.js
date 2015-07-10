@@ -11,13 +11,17 @@
       this.login = function() {
         auth.$authWithOAuthPopup("google").then(function(authData) {
           console.log(authData);
-          console.log("Logged in as:", authData.uid);
-          var user = {
-            'name': authData.google.displayName,
-            'image': authData.google.profileImageURL,
-            'uid': authData.uid
-          }
-          console.log(user);
+          ref.onAuth(function(authData) {
+            if (authData) {
+              // save the user's profile into the database so we can list users,
+              // use them in Security and Firebase Rules, and show profiles
+              ref.child("users").child(authData.uid).set({
+                provider: authData.provider,
+                name: authData.google.displayName,
+                image: authData.google.profileImageURL
+              });
+            }
+          });
         }).catch(function(error) {
           console.log("Authentication failed:", error);
         });
