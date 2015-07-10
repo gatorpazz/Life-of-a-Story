@@ -1,6 +1,6 @@
 {
   "firebase": "life-of-a-story",
-  "public": ".",
+  "public": "./dist",
   "ignore": [
     "firebase.json",
     "**/.*",
