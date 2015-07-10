@@ -4,7 +4,7 @@
     "url": "git+https://github.com/gatorpazz/Life-of-a-Story.git"
   },
   "author": " <Michael Pascuzzi gatorpazz@gmail.com>",
-  "license": "ISC",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/gatorpazz/Life-of-a-Story/issues"
   },
@@ -51,7 +51,7 @@
   },
   "name": "life-of-a-story",
   "description": "An interactive website that users can create an account to keep track of the books they read and find new ones",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
