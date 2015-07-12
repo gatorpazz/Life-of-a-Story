@@ -23,6 +23,10 @@
         .state('myBooks', {
             url: '/my-books',
             templateUrl: 'views/my-books.html'
+        })
+        .state('addBook', {
+          url: '/add-a-book',
+          templateUrl: 'views/addBook.html'
         });
     });
 angular.module('life-of-a-story').constant('FIREBASE_URL', 'https://life-of-a-story.firebaseio.com/');
