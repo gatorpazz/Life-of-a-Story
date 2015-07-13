@@ -3,8 +3,8 @@
   <div class="form-group registrationForm">
     <label for="title">Title</label>
     <input type="text" class="form-control" name="title" placeholder="Book Title">
-    </div>
-    <div class="form-group registrationForm">
+  </div>
+  <div class="form-group registrationForm">
     <label for="author">Author</label>
     <input type="text" class="form-control" name="author" placeholder="Book Author">
   </div>
@@ -23,7 +23,13 @@
         <h4 class="modal-title">Books to Select</h4>
       </div>
       <div class="modal-body" ng-repeat="item in abc.books.items">
-        <p>{{ item.volumeInfo.title }}</p>
+        <a href="" ng-click="">
+          <div>
+          <img ng-src="{{ item.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+          <h4>{{ item.volumeInfo.title }}</h4>
+          <author>{{ item.volumeInfo.authors[0] }}</author>
+        </div>
+        </a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
