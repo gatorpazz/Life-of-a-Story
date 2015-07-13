@@ -27,6 +27,12 @@
         .state('addBook', {
           url: '/add-a-book',
           templateUrl: 'views/addBook.html'
+        })
+        .state('my-summary', {
+          url: '/my-summary',
+          templateUrl: 'views/my-summary.html',
+          controller: 'MySummaryController',
+          controllerAs: 'sum'
         });
     });
 angular.module('life-of-a-story').constant('FIREBASE_URL', 'https://life-of-a-story.firebaseio.com/');
