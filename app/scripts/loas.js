@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-  angular.module('life-of-a-story', ['ui.router', 'firebase'])
+  angular.module('life-of-a-story', ['ui.router', 'firebase', 'restangular'])
     .config(function($stateProvider, $urlRouterProvider) {
 
       $urlRouterProvider.otherwise('/home');
@@ -36,6 +36,9 @@
           controller: 'MySummaryController',
           controllerAs: 'sum'
         });
-    });
-  angular.module('life-of-a-story').constant('FIREBASE_URL', 'https://life-of-a-story.firebaseio.com/');
+    })
+  .config(function(RestangularProvider) {
+    //set the base url for api calls on our RESTful services
+    RestangularProvider.setBaseUrl('https://www.googleapis.com/books/v1/volumes');
+  });
 })();
