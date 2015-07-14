@@ -17,12 +17,9 @@
             $scope.books = response.data;
           })
       };
-      $scope.confirmBook = function(isbn) {
-        $http.get('https://www.googleapis.com/books/v1/volumes?q=+isbn:' + isbn + '&access_token=' + $scope.user.google.accessToken)
-          .then(function(response) {
-            $scope.confirm = response.data;
+      $scope.confirmBook = function(book) {
+            $scope.confirm = book;
             console.log($scope.confirm);
-          })
-      }
-    });
+          };
+      });
 })();

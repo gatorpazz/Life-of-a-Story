@@ -23,7 +23,7 @@
         <h4 class="modal-title">Books to Select</h4>
       </div>
       <div class="modal-body well" ng-repeat="book in books.items">
-        <a href="" ng-click="confirmBook(book.volumeInfo.industryIdentifiers[0].identifier)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
+        <a href="" ng-click="confirmBook(book)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
           <div>
           <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
           <h4>{{ book.volumeInfo.title }}</h4>
@@ -52,9 +52,9 @@
       <div class="modal-body">
         <a href="" ng-click="">
           <div>
-          <img ng-src="{{ confirm.items[0].volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
-          <h4>{{ confirm.items[0].volumeInfo.title }}</h4>
-          <author>{{ confirm.items[0].volumeInfo.authors[0] }}</author>
+          <img ng-src="{{ confirm.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+          <h4>{{ confirm.volumeInfo.title }}</h4>
+          <author>{{ confirm.volumeInfo.authors[0] }}</author>
         </div>
         </a>
       </div>
