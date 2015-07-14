@@ -9,18 +9,20 @@
         'title': '',
         'author': ''
       };
+      $scope.confirm = {};
+      $scope.books = [];
       $scope.searchBooks = function() {
         $http.get('https://www.googleapis.com/books/v1/volumes?q=' + $scope.query.title + '+inauthor:' + $scope.query.author + '&access_token=' + $scope.user.google.accessToken)
           .then(function(response) {
-            console.log(response.data);
+            $scope.books = response.data;
           })
       };
-      var self = this;
-      this.books = [];
-        $http.get("/api/sampledata/hyperion.json")
+      $scope.confirmBook = function(isbn) {
+        $http.get('https://www.googleapis.com/books/v1/volumes?q=+isbn:' + isbn + '&access_token=' + $scope.user.google.accessToken)
           .then(function(response) {
-          console.log(response.data);
-          self.books = response.data;
-        });
+            $scope.confirm = response.data;
+            console.log($scope.confirm);
+          })
+      }
     });
 })();
