@@ -10,7 +10,7 @@
         'author': ''
       };
       $scope.searchBooks = function() {
-        $http.get('https://www.googleapis.com/books/v1/volumes?q=' + $scope.query.title + '+inauthor:' + $scope.query.author + '&key=' + $scope.user.token)
+        $http.get('https://www.googleapis.com/books/v1/volumes?q=' + $scope.query.title + '+inauthor:' + $scope.query.author + '&access_token=' + $scope.user.google.accessToken)
           .then(function(response) {
             console.log(response.data);
           })

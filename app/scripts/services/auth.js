@@ -10,12 +10,12 @@
        googleLogin: function(){
          ref.authWithOAuthPopup('google', function(){
            console.log('hello');
-         }, {remember: 'sessionOnly'});
+         }, {remember: 'sessionOnly', scope: 'https://www.googleapis.com/auth/books'});
        },
        authStatus: function(){
          return ref.getAuth();
        },
-       ghLogout: function(){
+       googleLogout: function(){
          ref.unauth();
          console.log('goodbye');
        }
