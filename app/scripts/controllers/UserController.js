@@ -12,7 +12,7 @@
           $scope.authData = authData;
           console.log(authData);
           if (authData) {
-            ref.child('users').child(authData.uid).set({
+            ref.child('users').child(authData.uid).update({
               provider: authData.provider,
               name: authData.google.displayName,
               image: authData.google.profileImageURL
