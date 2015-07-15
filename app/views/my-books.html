@@ -1,10 +1,10 @@
-<section class="row well">
+<section class="row well" ng-repeat="book in userBooks">
   <div class="col-xs-4">
-    <img alt="Book Image"></img>
+    <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="Book Image"></img>
   </div>
   <div class="col-xs-8">
-    <h4>Book Title</h4>
-    <author>Book Author</author>
+    <h4>{{ book.volumeInfo.title }}</h4>
+    <author>{{ book.volumeInfo.authors[0] }}</author>
   </div>
 </section>
 <div class="text-center well">
