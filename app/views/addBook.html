@@ -29,13 +29,14 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Books to Select</h4>
       </div>
+      <h2 class="text-center">{{ errorMessage }}</h2>
       <div class="modal-body well" ng-repeat="book in books.items">
         <a href="" ng-click="selectBook(book)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
           <div>
-          <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
-          <h4>{{ book.volumeInfo.title }}</h4>
-          <author>{{ book.volumeInfo.authors[0] }}</author>
-        </div>
+            <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+            <h4>{{ book.volumeInfo.title }}</h4>
+            <author>{{ book.volumeInfo.authors[0] }}</author>
+          </div>
         </a>
       </div>
       <div class="modal-footer">
