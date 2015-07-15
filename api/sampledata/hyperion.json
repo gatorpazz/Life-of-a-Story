@@ -1,0 +1,795 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 184,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "u4R_FstZDEgC",
+      "etag": "86eaVkJkEdc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/u4R_FstZDEgC",
+      "volumeInfo": {
+        "title": "Hyperion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Spectra",
+        "publishedDate": "2011-01-12",
+        "description": "On the world called Hyperion, beyond the law of the Hegemony of Man, there waits the creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all. On the eve of Armageddon, with the entire galaxy at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of their lives. Each carries a desperate hope--and a terrible secret. And one may hold the fate of humanity in his hands. From the Paperback edition.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307781888"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0307781887"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 496,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 2141,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.3.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=u4R_FstZDEgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=u4R_FstZDEgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=u4R_FstZDEgC&pg=PT36&dq=hyperion+inauthor:simmons&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=u4R_FstZDEgC&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Hyperion.html?hl=&id=u4R_FstZDEgC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 4.37,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=u4R_FstZDEgC&dq=hyperion+inauthor:simmons&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 4370000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Hyperion-sample-epub.acsm?id=u4R_FstZDEgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=u4R_FstZDEgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Dan Simmons. press on. Oh, Monsignor Edouard, if you could seemenow. <br>\\\nPunished but still unrepentant. More alone than everbut strangely satisfied with <br>\\\nmy new exile. If my punishment for past excesses brought aboutbymy zealis tobe<br>\\\n&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "DaN3-r0EXOcC",
+      "etag": "P0ROKLB02IU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DaN3-r0EXOcC",
+      "volumeInfo": {
+        "title": "The Fall of Hyperion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Spectra",
+        "publishedDate": "2011-02-02",
+        "description": "In the stunning continuation of the epic adventure begun in Hyperion, Simmons returns us to a far future resplendent with drama and invention. On the world of Hyperion, the mysterious Time Tombs are opening. And the secrets they contain mean that nothing--nothing anywhere in the universe--will ever be the same. From the Paperback edition.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307781895"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0307781895"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 528,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 990,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.13.14.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DaN3-r0EXOcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DaN3-r0EXOcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=DaN3-r0EXOcC&pg=PT230&dq=hyperion+inauthor:simmons&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=DaN3-r0EXOcC&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Fall_of_Hyperion.html?hl=&id=DaN3-r0EXOcC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 5.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=DaN3-r0EXOcC&dq=hyperion+inauthor:simmons&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 5990000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Fall_of_Hyperion-sample-epub.acsm?id=DaN3-r0EXOcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=DaN3-r0EXOcC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Dan Simmons. nothing to spread unnecessary panic. And God save the <br>\\\nHegemony.” She turned and swept from the room. Gladstone sat behind her desk<br>\\\n. Kolchev, Gibbons, and Albedo sat across from her. The urgency in the air, felt <br>\\\nfrom&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "cl_2AwAAQBAJ",
+      "etag": "iBFbA4KnnQk",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/cl_2AwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Hyperion Cantos 4-Book Bundle",
+        "subtitle": "Hyperion, The Fall of Hyperion, Endymion, The Rise of Endymion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Spectra",
+        "publishedDate": "2014-08-05",
+        "description": "Hailed as “one of the finest achievements of modern science fiction” by The New York Times Book Review, The Hyperion Cantos is a triumphant odyssey into the heart of space and time. Through four riveting novels, Dan Simmons masterfully weaves such influences as classical mythology, romantic poetry, and far-future philosophy into an ambitiously conceived and unfailingly entertaining epic. Now, for the first time, this entire masterpiece of the imagination is available in one extraordinary eBook bundle: HYPERION THE FALL OF HYPERION ENDYMION THE RISE OF ENDYMION On the planet Hyperion, beyond the reach of galactic law, waits a creature called the Shrike. There are those who worship it. There are those who fear it. And there are those who have vowed to destroy it. On the eve of Armageddon, with the known universe at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of existence. As the Shrike anticipates their mission, each traveler nurtures a desperate hope—and harbors a terrible secret. And one may hold the fate of humanity in his or her hands. Praise for The Hyperion Cantos “For vastness of scope, clarity of detail and seriousness of purpose, Simmons’s epic narrative is on a par with Isaac Asimov’s Foundation series, Frank Herbert’s Dune books, Gene Wolfe’s multipart Book of the New Sun and Brian Aldiss’s Helliconia trilogy.”—The New York Times Book Review “Dan Simmons has brilliantly conceptualized a future 700 years distant. In sheer scope and complexity it matches, and perhaps even surpasses, those of Isaac Asimov and James Blish.”—The Washington Post Book World “State of the art science fiction . . . This work will be that against which all future works will have to be measured, in the same way, in their time, that Asimov’s Foundation series and Le Guin’s The Left Hand of Darkness set new standards.”—Asimov’s “Simmons’ own genius transforms space opera into a new kind of poetry.”—The Denver Post “A major work . . . Simmons doesn’t just promise; he delivers.”—Science Fiction Chronicle",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780804180580"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "080418058X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 2320,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.3.3.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=cl_2AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=cl_2AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=cl_2AwAAQBAJ&pg=PT471&dq=hyperion+inauthor:simmons&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=cl_2AwAAQBAJ&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Hyperion_Cantos_4_Book_Bundle.html?hl=&id=cl_2AwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 24.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 24.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=cl_2AwAAQBAJ&dq=hyperion+inauthor:simmons&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 24990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 24990000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Hyperion_Cantos_4_Book_Bundle-sample-epub.acsm?id=cl_2AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=cl_2AwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "<b>Hyperion</b>, The Fall of <b>Hyperion</b>, Endymion, The Rise of Endymion Dan Simmons. <br>\\\ncybrid and become a man. I wanted to go to <b>Hyperion</b>. I still do.” “Somebody <br>\\\nkilled you for that decision a week ago,” I said. “Yes.” “And you&#39;re going to try <br>\\\nagain?"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "h0kXAAAACAAJ",
+      "etag": "InsOcf8Kc/w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/h0kXAAAACAAJ",
+      "volumeInfo": {
+        "title": "Hyperion Cantos",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "GuildAmerica Books",
+        "publishedDate": "1996-01-01",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1568651759"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781568651750"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 936,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=h0kXAAAACAAJ&dq=hyperion+inauthor:simmons&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=h0kXAAAACAAJ&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Hyperion_Cantos.html?hl=&id=h0kXAAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=h0kXAAAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "V0dpBwAAQBAJ",
+      "etag": "lAHqOd08Czg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/V0dpBwAAQBAJ",
+      "volumeInfo": {
+        "title": "Hyperion 01 - Hyperion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Australia Books",
+        "publishedDate": "2011-01-12",
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.1.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=V0dpBwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=V0dpBwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=V0dpBwAAQBAJ&dq=hyperion+inauthor:simmons&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=V0dpBwAAQBAJ&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Hyperion_01_Hyperion.html?hl=&id=V0dpBwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=V0dpBwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "b2ReHAAACAAJ",
+      "etag": "hCPW+4ZsmLc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/b2ReHAAACAAJ",
+      "volumeInfo": {
+        "title": "The Hyperion Omnibus",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Orion Publishing Company",
+        "publishedDate": "2004",
+        "description": "The Hyperion books are credited with single-handedly reinventing and reinvigorating SF in the 1990s. A broad canvased, hugely imaginative and exciting SF epic, the books draw on the works of Keats and provide a uniquely intelligent and literary approach with cutting edge science, compelling characterisation and edge-of-your-seat excitement. The story is continued in ENDYMION and THE RISE OF ENDYMION, which Gollancz will also be publishing in an omnibus volume.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0575076267"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780575076266"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 779,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 45,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=b2ReHAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=b2ReHAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=b2ReHAAACAAJ&dq=hyperion+inauthor:simmons&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=b2ReHAAACAAJ&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/The_Hyperion_Omnibus.html?hl=&id=b2ReHAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=b2ReHAAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The story is continued in ENDYMION and THE RISE OF ENDYMION, which Gollancz will also be publishing in an omnibus volume."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZbplAwAAQBAJ",
+      "etag": "PoLc6Pgj3vU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZbplAwAAQBAJ",
+      "volumeInfo": {
+        "title": "La caduta di Hyperion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Fanucci Editore",
+        "publishedDate": "2014-02-04",
+        "description": "I sette pellegrini hanno raggiunto le Tombe del Tempo di Hyperion e sono al cospetto dello Shrike; intorno a loro divampa lo scontro tra gli Ouster e le forze dell’Egemonia. John Keats, una macchina umana costruita dalle Intelligenze Artificiali in cui è stata ricreata la coscienza del poeta, riesce a scoprire dove risiede il loro nucleo operativo, ma il fatto che si trovi all’interno dei teleporter comporta conseguenze inquietanti: bisognerebbe riportare indietro l’orologio dell’evoluzione umana, evitando così di soccombere alle Intelligenze attraverso la distruzione della Rete su cui si fonda l’Egemonia. Mentre i capi dell’Egemonia si trovano di fronte a una scelta di vita o di morte, il destino dei pellegrini si unisce inesorabilmente con quello dell’intera umanità. Con La caduta di Hyperion, Dan Simmons descrive un mondo decadente e profondo, dove la fantascienza trova la sua massima espressione e ci regala un romanzo indimenticabile.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788834718889"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8834718887"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 545,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.183.158.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZbplAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZbplAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "it",
+        "previewLink": "http://books.google.com/books?id=ZbplAwAAQBAJ&pg=PT230&dq=hyperion+inauthor:simmons&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ZbplAwAAQBAJ&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/La_caduta_di_Hyperion.html?hl=&id=ZbplAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/La_caduta_di_Hyperion-sample-epub.acsm?id=ZbplAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/La_caduta_di_Hyperion-sample-pdf.acsm?id=ZbplAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=ZbplAwAAQBAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Mi informi delle ultime novità sui pellegrini di <b>Hyperion</b>. Incrociai le braccia e la <br>\\\nfissai. – Solo se mi promette di fare una cosa. – Se posso. Esitai. Nessuna leva <br>\\\ndell&#39;universo avrebbe indotto quella donna a firmare un assegno in bianco."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "Y8MpQQAACAAJ",
+      "etag": "4CZpX7dqFxc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Y8MpQQAACAAJ",
+      "volumeInfo": {
+        "title": "La Caída de Hyperion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "ZETA BOLSILLO",
+        "publishedDate": "2010-04-15",
+        "description": "La aventura épica de Hyperion alcanza su clímax cuando los peregrinos se reúnen ante las Tumbas del Tiempo y éstas se abren para liberar el Alcaudón. los humanos de la Hegemonía y de los enjambres éxter, las Inteligencias Artificiales del TecnoNúcleo, los",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "8498723140"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9788498723144"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 736,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Y8MpQQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Y8MpQQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com/books?id=Y8MpQQAACAAJ&dq=hyperion+inauthor:simmons&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Y8MpQQAACAAJ&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/La_Ca%C3%ADda_de_Hyperion.html?hl=&id=Y8MpQQAACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=Y8MpQQAACAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "La aventura épica de Hyperion alcanza su clímax cuando los peregrinos se reúnen ante las Tumbas del Tiempo y éstas se abren para liberar el Alcaudón. los humanos de la Hegemonía y de los enjambres éxter, las Inteligencias ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "6q_Tj-UPkgUC",
+      "etag": "0VzSYVNKUuw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/6q_Tj-UPkgUC",
+      "volumeInfo": {
+        "title": "Die Hyperion-Gesänge",
+        "subtitle": "Zwei Romane in einem Band",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Heyne Verlag",
+        "publishedDate": "2013-02-11",
+        "description": "Auf den Spuren der Zeit In den Weiten des Alls hat sich die Menschheit über unzählige Sonnensysteme ausgebreitet. Während technischer Fortschritt und Dekadenz Unmögliches wahr machen, suchen sechs Menschen Antwort auf die größte aller Fragen: Was ist das Leben, was ist der Tod? Dazu begeben sie sich auf eine Pilgerfahrt nach Hyperion, wo das Shrike herrscht, ein rätselhaftes, halb organisches, halb mechanisches Wesen, der Inbegriff von Schmerz und Qual. Es bewacht die Zeitgräber, und genau dort erfüllt sich das Schicksal der Pilger - und der Menschheit in der Zukunft.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9783641100544"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "3641100542"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 1408,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.2.2.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=6q_Tj-UPkgUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=6q_Tj-UPkgUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=6q_Tj-UPkgUC&pg=PT475&dq=hyperion+inauthor:simmons&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=6q_Tj-UPkgUC&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Die_Hyperion_Ges%C3%A4nge.html?hl=&id=6q_Tj-UPkgUC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 17.64,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 9.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=6q_Tj-UPkgUC&dq=hyperion+inauthor:simmons&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 17640000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Die_Hyperion_Ges%C3%A4nge-sample-epub.acsm?id=6q_Tj-UPkgUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Die_Hyperion_Ges%C3%A4nge-sample-pdf.acsm?id=6q_Tj-UPkgUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=6q_Tj-UPkgUC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Der Sturz von <b>Hyperion</b> &gt;&gt;Kann Gott ein bedeutsames Spiel mit seinen eigenen <br>\\\nGeschöpfen spielen? Kann irgendein Schöpfer, und sei es ein begrenzter, ein <br>\\\nbedeutsames Spiel mit seinen Geschöpfen spielen?« Norbert Wiener: God und&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "-GwCfhB-xgAC",
+      "etag": "t08zbIRn4SE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/-GwCfhB-xgAC",
+      "volumeInfo": {
+        "title": "Endymion",
+        "authors": [
+          "Dan Simmons"
+        ],
+        "publisher": "Spectra",
+        "publishedDate": "2011-01-05",
+        "description": "The multiple-award-winning science fiction master returns to the universe that is his greatest triumph--the world of Hyperion and The Fall of Hyperion --with a novel even more magnificent than its predecessors. Dan Simmons's Hyperion was an immediate sensation on its first publication in 1989. This staggering multifaceted tale of the far future heralded the conquest of the science fiction field by a man who had already won the World Fantasy Award for his first novel (Song of Kali) and had also published one of the most well-received horror novels in the field, Carrion Comfort. Hyperion went on to win the Hugo Award as Best Novel, and it and its companion volume, The Fall of Hyperion, took their rightful places in the science fiction pantheon of new classics. Now, six years later, Simmons returns to this richly imagined world of technological achievement, excitement, wonder and fear. Endymion is a story about love and memory, triumph and terror--an instant candidate for the field's highest honors. From the Paperback edition.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0553572946"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780553572940"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 576,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 418,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.0.0.preview.2",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=-GwCfhB-xgAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=-GwCfhB-xgAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=-GwCfhB-xgAC&pg=PA5&dq=hyperion+inauthor:simmons&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=-GwCfhB-xgAC&dq=hyperion+inauthor:simmons&hl=&source=gbs_api",
+        "canonicalVolumeLink": "http://books.google.com/books/about/Endymion.html?hl=&id=-GwCfhB-xgAC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 7.59,
+          "currencyCode": "USD"
+        },
+        "buyLink": "http://books.google.com/books?id=-GwCfhB-xgAC&dq=hyperion+inauthor:simmons&hl=&buy=&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 7590000,
+              "currencyCode": "USD"
+            }
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Endymion-sample-epub.acsm?id=-GwCfhB-xgAC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://books.google.com/books/reader?id=-GwCfhB-xgAC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "I was born on the world of <b>Hyperion</b> in the year 693 a.d.c. on our local calendar, <br>\\\nor a.d. 3099, pre-Hegira reckoning, or, as most of us figure time in the era of the <br>\\\nPax, 247 years after the Fall. It was said about me when I traveled with the One&nbsp;..."
+      }
+    }
+  ]
+}
