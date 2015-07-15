@@ -1,4 +1,4 @@
-/* global angular */
+/* global angular Firebase */
 (function() {
   'use strict';
 
@@ -21,13 +21,13 @@
         $http.get('https://www.googleapis.com/books/v1/volumes?q=' + $scope.query.title + '+inauthor:' + $scope.query.author + '&access_token=' + $scope.user.google.accessToken)
           .then(function(response) {
             $scope.books = response.data;
-          })
+          });
       };
       $scope.specificSearchBooks = function() {
         $http.get('https://www.googleapis.com/books/v1/volumes?q=+isbn:' + $scope.specificQuery.isbn + '&access_token=' + $scope.user.google.accessToken)
         .then(function(response) {
           $scope.books = response.data;
-        })
+        });
       };
       $scope.selectBook = function(book) {
         $scope.confirm = book;
@@ -37,5 +37,5 @@
       $scope.confirmBook = function() {
         $scope.userBooks.$add($scope.confirm);
       };
-    })
+    });
 })();

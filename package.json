@@ -51,7 +51,7 @@
   },
   "name": "life-of-a-story",
   "description": "An interactive website that users can create an account to keep track of the books they read and find new ones",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "main": "gulpfile.babel.js",
   "directories": {
     "test": "test"
