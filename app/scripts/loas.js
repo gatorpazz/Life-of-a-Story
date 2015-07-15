@@ -22,7 +22,9 @@
         })
         .state('myBooks', {
           url: '/my-books',
-          templateUrl: 'views/my-books.html'
+          templateUrl: 'views/my-books.html',
+          controller: 'MyBooksController',
+          controllerAs: 'myBook'
         })
         .state('addBook', {
           url: '/add-a-book',
