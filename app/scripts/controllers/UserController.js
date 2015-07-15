@@ -1,4 +1,4 @@
-/* global angular Firebase*/
+/* global angular Firebase */
 (function() {
   'use strict';
 
@@ -11,11 +11,13 @@
         $scope.auth.$onAuth(function(authData) {
           $scope.authData = authData;
           console.log(authData);
-          ref.child('users').child(authData.uid).set({
-            provider: authData.provider,
-            name: authData.google.displayName,
-            image: authData.google.profileImageURL
-          });
+          if (authData) {
+            ref.child('users').child(authData.uid).set({
+              provider: authData.provider,
+              name: authData.google.displayName,
+              image: authData.google.profileImageURL
+            })
+          };
         });
       }; // END addUser method
       $scope.login = function() {
