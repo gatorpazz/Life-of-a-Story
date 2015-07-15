@@ -12,6 +12,9 @@
         'title': '',
         'author': ''
       };
+      $scope.specificQuery = {
+        'isbn': ''
+      };
       $scope.confirm = {};
       $scope.books = [];
       $scope.searchBooks = function() {
@@ -19,6 +22,12 @@
           .then(function(response) {
             $scope.books = response.data;
           })
+      };
+      $scope.specificSearchBooks = function() {
+        $http.get('https://www.googleapis.com/books/v1/volumes?q=+isbn:' + $scope.specificQuery.isbn + '&access_token=' + $scope.user.google.accessToken)
+        .then(function(response) {
+          $scope.books = response.data;
+        })
       };
       $scope.selectBook = function(book) {
         $scope.confirm = book;
