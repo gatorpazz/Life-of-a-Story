@@ -3,8 +3,11 @@
   'use strict';
 
   angular.module('life-of-a-story')
-    .controller('AddBookController', function($scope, Auth, $firebase, $http) {
+    .controller('AddBookController', function($scope, Auth, $firebase, $http, $firebaseArray) {
       $scope.user = Auth.authStatus();
+      var ref = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books');
+      $scope.userBooks = $firebaseArray(ref);
+      console.log($scope.user);
       $scope.query = {
         'title': '',
         'author': ''
@@ -17,9 +20,13 @@
             $scope.books = response.data;
           })
       };
-      $scope.confirmBook = function(book) {
-            $scope.confirm = book;
-            console.log($scope.confirm);
-          };
-      });
+      $scope.selectBook = function(book) {
+        $scope.confirm = book;
+        console.log($scope.confirm);
+        return $scope.confirm;
+      };
+      $scope.confirmBook = function() {
+        $scope.userBooks.$add($scope.confirm);
+      };
+    })
 })();
