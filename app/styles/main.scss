@@ -4,12 +4,17 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "_findBook.scss";
 @import "_myBooks.scss";
 @import "_mySummary.scss";
 
 body {
   background-color: #f1f1d4;
+}
+
+.loasForm {
+  input, textarea {
+    margin-bottom: 2ex;
+  }
 }
 
 .browserupgrade {

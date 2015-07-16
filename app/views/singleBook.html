@@ -13,8 +13,17 @@
 <h2 class="text-center">What would you like to remember?</h2>
 <section class="text-center">
   <div class="btn-group" role="group" aria-label="Note Creation Buttons">
-    <button type="button" class="btn btn-danger">General Notes</button>
-    <button type="button" class="btn btn-danger">Page Notes</button>
-    <button type="button" class="btn btn-danger">Character Notes</button>
+    <button type="button" class="btn btn-danger">General Note</button>
+    <button type="button" class="btn btn-danger">Page Note</button>
+    <button type="button" class="btn btn-danger">Character Note</button>
   </div>
-</section>
+</section> <!--END BUTTON GROUP-->
+<form>
+  <div class="form-group loasForm">
+    <label for="noteTitle">Note Title</label>
+    <input type="text" class="form-control loasForm" name="noteTitle" placeholder="Note Title">
+    <label for="noteBody">Note Body</label>
+    <textarea class="form-control" name="noteBody"></textarea>
+    <button type="submit" class="btn btn-danger">Add Note!</button>
+  </div>
+</form><!--END GENERAL NOTE INPUT-->
