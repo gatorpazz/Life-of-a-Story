@@ -12,7 +12,7 @@
 <h1 class="text-center">Your Notes</h1>
 <h2 class="text-center">What would you like to remember?</h2>
 <section class="text-center">
-  <div class="btn-group" role="group" aria-label="Note Creation Buttons">
+  <div class="btn-group" role="To select what type of note to create" aria-label="Note Creation Buttons">
     <button type="button" class="btn btn-danger">General Note</button>
     <button type="button" class="btn btn-danger">Page Note</button>
     <button type="button" class="btn btn-danger">Character Note</button>
@@ -21,9 +21,20 @@
 <form>
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
-    <input type="text" class="form-control loasForm" name="noteTitle" placeholder="Note Title">
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title">
     <label for="noteBody">Note Body</label>
     <textarea class="form-control" name="noteBody"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END GENERAL NOTE INPUT-->
+<form>
+  <div class="form-group loasForm">
+    <label for="noteTitle">Note Title</label>
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title">
+    <label for="pageNumber">Page Number</label>
+    <input type="text" class="form-control" name="pageNumber" placeholder="Page Number">
+    <label for="noteBody">Note Body</label>
+    <textarea class="form-control" name="noteBody"></textarea>
+    <button type="submit" class="btn btn-danger">Add Note!</button>
+  </div>
+</form>
