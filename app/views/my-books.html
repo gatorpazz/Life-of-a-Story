@@ -1,13 +1,15 @@
 <section class="row well" ng-repeat="book in userBooks">
-  <div class="col-xs-4">
-    <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="Book Image"></img>
-  </div>
-  <div class="col-xs-4">
-    <h4>{{ book.volumeInfo.title }}</h4>
-    <author>{{ book.volumeInfo.authors[0] }}</author>
-  </div>
-  <div class="col-xs-4 text-center">
-    <button class="btn glyphicon glyphicon glyphicon-remove-sign deleteBookButton" ng-click="deleteBook(book)"></button>
+  <a ui-sref="individualBook({book: book.$id})">
+    <div class="col-xs-12">
+      <div id="coverImage" class="col-xs-6">
+        <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="Book Image"></img>
+      </div>
+      <div class="col-xs-6">
+        <h4>{{ book.volumeInfo.title }}</h4>
+        <author>{{ book.volumeInfo.authors[0] }}</author>
+      </div>
+    </div>
+  </a>
 </section>
 <div class="text-center well">
   <a ui-sref="addBook" class="glyphicon glyphicon-plus"><br>Add New Book</a>

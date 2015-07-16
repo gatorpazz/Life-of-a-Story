@@ -9,7 +9,7 @@
 
       $stateProvider
 
-      // HOME VIEW WITH LOGIN AND REGISTRATION
+      // HOME VIEW WITH LOGIN
         .state('home', {
           url: '/home',
           templateUrl: 'views/home.html',
@@ -37,6 +37,12 @@
           templateUrl: 'views/my-summary.html',
           controller: 'MySummaryController',
           controllerAs: 'sum'
+        })
+        .state('individualBook', {
+          url: '/:book',
+          templateUrl: 'views/singleBook.html',
+          controller: 'NotesController',
+          controllerAs: 'note'
         });
     })
   .config(function(RestangularProvider) {
