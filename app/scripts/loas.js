@@ -41,8 +41,8 @@
         .state('individualBook', {
           url: '/:book',
           templateUrl: 'views/singleBook.html',
-          controller: '',
-          controllerAs: ''
+          controller: 'NotesController',
+          controllerAs: 'note'
         });
     })
   .config(function(RestangularProvider) {
