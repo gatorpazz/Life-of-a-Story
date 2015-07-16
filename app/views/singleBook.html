@@ -18,7 +18,7 @@
     <button type="button" class="btn btn-danger">Character Note</button>
   </div>
 </section> <!--END BUTTON GROUP-->
-<form>
+<form class="well">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
     <input type="text" class="form-control" name="noteTitle" placeholder="Note Title">
@@ -27,14 +27,31 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END GENERAL NOTE INPUT-->
-<form>
+<form class="well">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
-    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title">
+    <input type="number" class="form-control" name="noteTitle" placeholder="Note Title">
     <label for="pageNumber">Page Number</label>
     <input type="text" class="form-control" name="pageNumber" placeholder="Page Number">
     <label for="noteBody">Note Body</label>
     <textarea class="form-control" name="noteBody"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
-</form>
+</form><!--END PAGE NOTE INPUT-->
+<form class="well">
+  <div class="form-group loasForm">
+    <label for="character">Character</label>
+    <input type="text" class="form-control" name="character" placeholder="Page Number">
+    <label for="noteBody">Note Body</label>
+    <textarea class="form-control" name="noteBody"></textarea>
+    <button type="submit" class="btn btn-danger">Add Note!</button>
+  </div>
+</form><!--END CHARACTER NOTE INPUT-->
+<section class="text-center">
+  <ul class="nav nav-tabs">
+    <li><a href="#">Recent</a></li>
+    <li><a href="#">General</a></li>
+    <li><a href="#">Page</a></li>
+    <li><a href="#">Character</a></li>
+  </ul>
+</section>
