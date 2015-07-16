@@ -47,11 +47,28 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END CHARACTER NOTE INPUT-->
-<section class="text-center">
-  <ul class="nav nav-tabs">
-    <li><a href="#">Recent</a></li>
-    <li><a href="#">General</a></li>
-    <li><a href="#">Page</a></li>
-    <li><a href="#">Character</a></li>
-  </ul>
-</section>
+<ul class="nav nav-tabs">
+  <li class="tab"><a data-toggle="tab" href="#recent">Recent</a></li>
+  <li class="tab"><a data-toggle="tab" href="#general">General</a></li>
+  <li class="tab"><a data-toggle="tab" href="#page">Page</a></li>
+  <li class="tab"><a data-toggle="tab" href="#character">Character</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="recent" class="tab-pane fade in active">
+    <h3>Recent Notes</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="general" class="tab-pane fade">
+    <h3>General Notes</h3>
+    <p>Some content in menu 1.</p>
+  </div>
+  <div id="page" class="tab-pane fade">
+    <h3>Page Notes</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+  <div id="character" class="tab-pane fade">
+    <h3>Character Notes</h3>
+    <p>Some content here</p>
+  </div>
+</div>
