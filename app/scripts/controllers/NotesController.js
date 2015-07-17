@@ -12,6 +12,10 @@
       $scope.openNoteForm = function(value) {
         $scope.button = value;
       }
+      $scope.tab = 1;
+      $scope.openNotes = function(tab) {
+        $scope.tab = tab;
+      }
 
     }); // END GameResultController
 })();
