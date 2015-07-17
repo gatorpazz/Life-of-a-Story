@@ -8,9 +8,9 @@
       $scope.user = Auth.authStatus();
       var books = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/');
       $scope.book = $firebaseObject(books.child($stateParams.book));
-      $scope.tab = null;
+      $scope.button = null;
       $scope.openNoteForm = function(value) {
-        $scope.tab = value;
+        $scope.button = value;
       }
 
     }); // END GameResultController
