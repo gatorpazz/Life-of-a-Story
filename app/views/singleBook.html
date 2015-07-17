@@ -13,12 +13,12 @@
 <h2 class="text-center">What would you like to remember?</h2>
 <section class="text-center">
   <div class="btn-group" role="To select what type of note to create" aria-label="Note Creation Buttons">
-    <button type="button" class="btn btn-danger">General Note</button>
-    <button type="button" class="btn btn-danger">Page Note</button>
-    <button type="button" class="btn btn-danger">Character Note</button>
+    <button type="button" class="btn btn-danger" ng-click="openNoteForm(1)">General Note</button>
+    <button type="button" class="btn btn-danger" ng-click="openNoteForm(2)">Page Note</button>
+    <button type="button" class="btn btn-danger" ng-click="openNoteForm(3)">Character Note</button>
   </div>
 </section> <!--END BUTTON GROUP-->
-<form class="well">
+<form class="well" ng-show="button === 1">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
     <input type="text" class="form-control" name="noteTitle" placeholder="Note Title">
@@ -27,7 +27,7 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END GENERAL NOTE INPUT-->
-<form class="well">
+<form class="well" ng-show="button === 2">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
     <input type="number" class="form-control" name="noteTitle" placeholder="Note Title">
@@ -38,36 +38,36 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END PAGE NOTE INPUT-->
-<form class="well">
+<form class="well" ng-show="button === 3">
   <div class="form-group loasForm">
     <label for="character">Character</label>
-    <input type="text" class="form-control" name="character" placeholder="Page Number">
+    <input type="text" class="form-control" name="character" placeholder="Character Name">
     <label for="noteBody">Note Body</label>
     <textarea class="form-control" name="noteBody"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END CHARACTER NOTE INPUT-->
 <ul class="nav nav-tabs">
-  <li class="tab"><a data-toggle="tab" href="#recent">Recent</a></li>
-  <li class="tab"><a data-toggle="tab" href="#general">General</a></li>
-  <li class="tab"><a data-toggle="tab" href="#page">Page</a></li>
-  <li class="tab"><a data-toggle="tab" href="#character">Character</a></li>
+  <li class="tab"><a href ng-click="openNotes(1)">Recent</a></li>
+  <li class="tab"><a href ng-click="openNotes(2)">General</a></li>
+  <li class="tab"><a href ng-click="openNotes(3)">Page</a></li>
+  <li class="tab"><a href ng-click="openNotes(4)">Character</a></li>
 </ul>
 
 <div class="tab-content">
-  <div id="recent" class="tab-pane fade in active">
+  <div ng-show="tab === 1" class="tab-pane fade in active">
     <h3>Recent Notes</h3>
     <p>Some content.</p>
   </div>
-  <div id="general" class="tab-pane fade">
+  <div ng-show="tab === 2" class="tab-pane fade in active">
     <h3>General Notes</h3>
     <p>Some content in menu 1.</p>
   </div>
-  <div id="page" class="tab-pane fade">
+  <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3>Page Notes</h3>
     <p>Some content in menu 2.</p>
   </div>
-  <div id="character" class="tab-pane fade">
+  <div ng-show="tab === 4" class="tab-pane fade in active">
     <h3>Character Notes</h3>
     <p>Some content here</p>
   </div>
