@@ -48,10 +48,10 @@
   </div>
 </form><!--END CHARACTER NOTE INPUT-->
 <ul class="nav nav-tabs">
-  <li class="tab"><a href ng-click="openNotes(1)">Recent</a></li>
-  <li class="tab"><a href ng-click="openNotes(2)">General</a></li>
-  <li class="tab"><a href ng-click="openNotes(3)">Page</a></li>
-  <li class="tab"><a href ng-click="openNotes(4)">Character</a></li>
+  <li class="tab" ng-class="{active:tab === 1}"><a href ng-click="openNotes(1)">Recent</a></li>
+  <li class="tab" ng-class="{active:tab === 2}"><a href ng-click="openNotes(2)">General</a></li>
+  <li class="tab" ng-class="{active:tab === 3}"><a href ng-click="openNotes(3)">Page</a></li>
+  <li class="tab" ng-class="{active:tab === 4}"><a href ng-click="openNotes(4)">Character</a></li>
 </ul>
 
 <div class="tab-content">
