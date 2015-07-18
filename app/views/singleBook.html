@@ -21,29 +21,29 @@
 <form class="well" ng-show="button === 1">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
-    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title">
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="genNote.title">
     <label for="noteBody">Note Body</label>
-    <textarea class="form-control" name="noteBody"></textarea>
+    <textarea class="form-control" name="noteBody" ng-model=genNote.body></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END GENERAL NOTE INPUT-->
 <form class="well" ng-show="button === 2">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
-    <input type="number" class="form-control" name="noteTitle" placeholder="Note Title">
+    <input type="number" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="pageNote.title">
     <label for="pageNumber">Page Number</label>
-    <input type="text" class="form-control" name="pageNumber" placeholder="Page Number">
+    <input type="text" class="form-control" name="pageNumber" placeholder="Page Number" ng-model="pageNote.page">
     <label for="noteBody">Note Body</label>
-    <textarea class="form-control" name="noteBody"></textarea>
+    <textarea class="form-control" name="noteBody" ng-model="pageNote.body"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END PAGE NOTE INPUT-->
 <form class="well" ng-show="button === 3">
   <div class="form-group loasForm">
     <label for="character">Character</label>
-    <input type="text" class="form-control" name="character" placeholder="Character Name">
+    <input type="text" class="form-control" name="character" placeholder="Character Name" ng-model="charNote.character">
     <label for="noteBody">Note Body</label>
-    <textarea class="form-control" name="noteBody"></textarea>
+    <textarea class="form-control" name="noteBody" ng-model="charNote.body"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END CHARACTER NOTE INPUT-->
