@@ -64,22 +64,23 @@
   </div>
   <div ng-show="tab === 2" class="tab-pane fade in active">
     <h3>General Notes</h3>
-    <div>
+    <div ng-repeat="note in genNotes">
       <h4>{{ note.title }}</h4>
       <p>{{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3>Page Notes</h3>
-    <div>
+    <div ng-repeat="note in pageNotes">
       <h4>{{ note.title }}</h4>
+      <span>{{ note.page }}</span>
       <p>{{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 4" class="tab-pane fade in active">
     <h3>Character Notes</h3>
-    <div>
-      <h4>{{ note.title }}</h4>
+    <div ng-repeat="note in charNotes">
+      <h4>{{ note.character }}</h4>
       <p>{{ note.body }}</p>
     </div>
   </div>
