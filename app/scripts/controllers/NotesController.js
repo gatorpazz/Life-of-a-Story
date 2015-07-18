@@ -13,16 +13,19 @@
       $scope.button = null;
       $scope.genNote = {
         'title': null,
-        'body': null
+        'body': null,
+        'created_on': null
       };
       $scope.pageNote = {
         'title': null,
         'page': null,
-        'body': null
+        'body': null,
+        'created_on': null
       };
       $scope.charNote = {
         'character': null,
-        'body': null
+        'body': null,
+        'created_on': null
       };
       $scope.openNoteForm = function(value) {
         $scope.button = value;
@@ -32,6 +35,9 @@
         $scope.tab = tab;
       };
       $scope.addNote = function(note) {
+        $scope.genNote.created_on = Date.now();
+        $scope.pageNote.created_on = Date.now();
+        $scope.charNote.created_on = Date.now();
         $scope.notes.$add(note);
       };
 
