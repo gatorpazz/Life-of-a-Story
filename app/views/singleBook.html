@@ -71,7 +71,7 @@
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3>Page Notes</h3>
-    <div ng-repeat="note in pageNotes">
+    <div ng-repeat="note in pageNotes | orderBy:'page'">
       <h4>{{ note.title }}</h4>
       <span>{{ note.page }}</span>
       <p>{{ note.body }}</p>
