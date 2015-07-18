@@ -8,8 +8,12 @@
       $scope.user = Auth.authStatus();
       var books = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/');
       $scope.book = $firebaseObject(books.child($stateParams.book));
-      var notes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/');
-      $scope.notes = $firebaseArray(notes);
+      var genNotes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/genNotes/');
+      var pageNotes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/pageNotes/');
+      var charNotes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/charNotes/');
+      $scope.genNotes = $firebaseArray(genNotes);
+      $scope.pageNotes = $firebaseArray(pageNotes);
+      $scope.charNotes = $firebaseArray(charNotes);
       $scope.button = null;
       $scope.genNote = {
         'title': null,
@@ -34,11 +38,17 @@
       $scope.openNotes = function(tab) {
         $scope.tab = tab;
       };
-      $scope.addNote = function(note) {
+      $scope.addGenNote = function(note) {
         $scope.genNote.created_on = Date.now();
+        $scope.genNotes.$add($scope.genNote);
+      };
+      $scope.addPageNote = function() {
         $scope.pageNote.created_on = Date.now();
+        $scope.pageNotes.$add($scope.pageNote);
+      };
+      $scope.addCharNote = function() {
         $scope.charNote.created_on = Date.now();
-        $scope.notes.$add(note);
+        $scope.charNotes.$add($scope.charNote);
       };
 
     }); // END GameResultController

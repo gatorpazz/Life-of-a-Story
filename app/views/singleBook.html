@@ -18,7 +18,7 @@
     <button type="button" class="btn btn-danger" ng-click="openNoteForm(3)">Character Note</button>
   </div>
 </section> <!--END BUTTON GROUP-->
-<form class="well" ng-show="button === 1" ng-submit="addNote(genNote)">
+<form class="well" ng-show="button === 1" ng-submit="addGenNote()">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
     <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="genNote.title">
@@ -27,7 +27,7 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END GENERAL NOTE INPUT-->
-<form class="well" ng-show="button === 2" ng-submit="addNote(pageNote)">
+<form class="well" ng-show="button === 2" ng-submit="addPageNote()">
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
     <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="pageNote.title">
@@ -38,7 +38,7 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END PAGE NOTE INPUT-->
-<form class="well" ng-show="button === 3" ng-submit="addNote(charNote)">
+<form class="well" ng-show="button === 3" ng-submit="addCharNote()">
   <div class="form-group loasForm">
     <label for="character">Character</label>
     <input type="text" class="form-control" name="character" placeholder="Character Name" ng-model="charNote.character">
