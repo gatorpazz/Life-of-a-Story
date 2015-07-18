@@ -29,6 +29,9 @@
       $scope.openNotes = function(tab) {
         $scope.tab = tab;
       };
+      $scope.addNote = function(note) {
+        $scope.book.$add(note);
+      };
 
     }); // END GameResultController
 })();
