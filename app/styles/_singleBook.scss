@@ -1,0 +1,26 @@
+.btn-group button:focus {
+  outline: 0;
+}
+
+#notes {
+  background: url(/images/greyBackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  border: 1ex solid grey;
+  border-radius: 1%;
+}
+#notesTabs {
+  margin-top: 3ex;
+}
+
+.note {
+  margin-bottom: 4ex;
+  border-bottom: 0.5ex solid darkred;
+}
+
+form h2 {
+  margin-bottom: 2ex;
+}
