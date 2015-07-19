@@ -7,6 +7,6 @@
       $scope.user = Auth.authStatus();
       if($scope.user == null) {
         $state.go('home');
-      };
+      }
     }); // END MySummaryController
 })();

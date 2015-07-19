@@ -9,9 +9,10 @@
       var books = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/');
       $scope.book = $firebaseObject(books.child($stateParams.book));
       var notes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/');
-      $scope.notes = $firebaseArray(notes)
+      $scope.notes = $firebaseArray(notes);
       $scope.button = null;
       $scope.note = {
+        /*eslint camelcase: 0*/
         'title': null,
         'character': null,
         'page': null,

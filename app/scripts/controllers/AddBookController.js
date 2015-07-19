@@ -7,7 +7,7 @@
       $scope.user = Auth.authStatus();
       if($scope.user == null) {
         $state.go('home');
-      };
+      }
       var ref = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books');
       var baseSearchUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
       $scope.userBooks = $firebaseArray(ref);

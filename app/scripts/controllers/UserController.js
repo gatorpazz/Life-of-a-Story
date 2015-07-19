@@ -15,9 +15,9 @@
               provider: authData.provider,
               name: authData.google.displayName,
               image: authData.google.profileImageURL
-            })
+            });
             $state.go('my-summary');
-          };
+          }
         });
       }; // END addUser method
       $scope.login = function() {
