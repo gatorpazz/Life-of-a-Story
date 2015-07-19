@@ -10,7 +10,6 @@
       $scope.book = $firebaseObject(books.child($stateParams.book));
       var notes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/');
       $scope.notes = $firebaseArray(notes)
-      console.log($scope.notes);
       $scope.button = null;
       $scope.note = {
         'title': null,
