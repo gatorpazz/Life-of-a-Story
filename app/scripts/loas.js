@@ -11,7 +11,9 @@
       // HOME VIEW WITH LOGIN
         .state('home', {
           url: '/home',
-          templateUrl: 'views/home.html'
+          templateUrl: 'views/home.html',
+          controller: 'HomeController',
+          controllerAs: 'home'
         })
         .state('registration', {
           url: '/registration',
