@@ -3,7 +3,7 @@
   'use strict';
 
   angular.module('life-of-a-story', ['ui.router', 'firebase', 'restangular'])
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider) {
 
 
       $stateProvider

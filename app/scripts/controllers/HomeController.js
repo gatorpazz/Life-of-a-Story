@@ -8,6 +8,6 @@
       console.log($scope.user);
       if($scope.user != null) {
         $state.go('my-summary');
-      };
+      }
     }); // END MySummaryController
 })();
