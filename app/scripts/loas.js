@@ -5,7 +5,6 @@
   angular.module('life-of-a-story', ['ui.router', 'firebase', 'restangular'])
     .config(function($stateProvider, $urlRouterProvider) {
 
-      $urlRouterProvider.otherwise('/home');
 
       $stateProvider
 
@@ -13,8 +12,8 @@
         .state('home', {
           url: '/home',
           templateUrl: 'views/home.html',
-          controller: 'UserController',
-          controllerAs: 'user'
+          controller: 'HomeController',
+          controllerAs: 'home'
         })
         .state('registration', {
           url: '/registration',
