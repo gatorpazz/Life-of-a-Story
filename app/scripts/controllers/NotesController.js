@@ -12,24 +12,12 @@
       $scope.notes = $firebaseArray(notes)
       console.log($scope.notes);
       $scope.button = null;
-      $scope.genNote = {
+      $scope.note = {
         'title': null,
-        'body': null,
-        'created_on': null,
-        'gen': 'gen'
-      };
-      $scope.pageNote = {
-        'title': null,
+        'character': null,
         'page': null,
         'body': null,
-        'created_on': null,
-        'pag': 'pag'
-      };
-      $scope.charNote = {
-        'character': null,
-        'body': null,
-        'created_on': null,
-        'char': 'char'
+        'created_on': null
       };
       $scope.openNoteForm = function(value) {
         $scope.button = value;
@@ -38,17 +26,16 @@
       $scope.openNotes = function(tab) {
         $scope.tab = tab;
       };
-      $scope.addGenNote = function() {
-        $scope.genNote.created_on = Date.now();
-        $scope.notes.$add($scope.genNote);
-      };
-      $scope.addPageNote = function() {
-        $scope.pageNote.created_on = Date.now();
-        $scope.notes.$add($scope.pageNote);
-      };
-      $scope.addCharNote = function() {
-        $scope.charNote.created_on = Date.now();
-        $scope.notes.$add($scope.charNote);
+      $scope.addNote = function() {
+        $scope.note.created_on = Date.now();
+        $scope.notes.$add($scope.note);
+        $scope.note = {
+          'title': null,
+          'character': null,
+          'page': null,
+          'body': null,
+          'created_on': null
+        };
       };
       $scope.deleteNote = function(note) {
         $scope.notes.$remove(note);

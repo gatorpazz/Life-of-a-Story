@@ -18,32 +18,35 @@
     <button type="button" class="btn btn-danger" ng-click="openNoteForm(3)">Character Note</button>
   </div>
 </section> <!--END BUTTON GROUP-->
-<form class="well" ng-show="button === 1" ng-submit="addGenNote()">
+<form class="well" ng-show="button === 1" ng-submit="addNote()">
+  <h2 class="text-center">General Note</h2>
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
-    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="genNote.title">
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="note.title">
     <label for="noteBody">Note Body</label>
-    <textarea class="form-control" name="noteBody" ng-model=genNote.body></textarea>
+    <textarea class="form-control" name="noteBody" ng-model=note.body></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END GENERAL NOTE INPUT-->
-<form class="well" ng-show="button === 2" ng-submit="addPageNote()">
+<form class="well" ng-show="button === 2" ng-submit="addNote()">
+  <h2 class="text-center">Page Note</h2>
   <div class="form-group loasForm">
     <label for="noteTitle">Note Title</label>
-    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="pageNote.title">
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="note.title">
     <label for="pageNumber">Page Number</label>
-    <input type="number" class="form-control" name="pageNumber" placeholder="Page Number" ng-model="pageNote.page">
+    <input type="number" class="form-control" name="pageNumber" placeholder="Page Number" ng-model="note.page">
     <label for="noteBody">Note Body</label>
-    <textarea class="form-control" name="noteBody" ng-model="pageNote.body"></textarea>
+    <textarea class="form-control" name="noteBody" ng-model="note.body"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END PAGE NOTE INPUT-->
-<form class="well" ng-show="button === 3" ng-submit="addCharNote()">
+<form class="well" ng-show="button === 3" ng-submit="addNote()">
+  <h2 class="text-center">Character Note</h2>
   <div class="form-group loasForm">
     <label for="character">Character</label>
-    <input type="text" class="form-control" name="character" placeholder="Character Name" ng-model="charNote.character">
+    <input type="text" class="form-control" name="character" placeholder="Character Name" ng-model="note.character">
     <label for="noteBody">Note Body</label>
-    <textarea class="form-control" name="noteBody" ng-model="charNote.body"></textarea>
+    <textarea class="form-control" name="noteBody" ng-model="note.body"></textarea>
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END CHARACTER NOTE INPUT-->
@@ -65,14 +68,14 @@
   </div>
   <div ng-show="tab === 2" class="tab-pane fade in active">
     <h3 class="text-center">General Notes</h3>
-    <div ng-repeat="note in notes" ng-if="note.gen == 'gen'">
+    <div ng-repeat="note in notes" ng-if="note.character == null && note.page == null">
       <h4>{{ note.title }}</h4>
       <p>{{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3 class="text-center">Page Notes</h3>
-    <div ng-repeat="note in notes" ng-if="note.pag == 'pag'">
+    <div ng-repeat="note in notes | orderBy:'page'" ng-if="note.page != null">
       <h4>{{ note.title }}</h4>
       <span>{{ note.page }}</span>
       <p>{{ note.body }}</p>
@@ -80,7 +83,7 @@
   </div>
   <div ng-show="tab === 4" class="tab-pane fade in active">
     <h3 class="text-center">Character Notes</h3>
-    <div ng-repeat="note in notes" ng-if="note.char == 'char'">
+    <div ng-repeat="note in notes | orderBy:'character'" ng-if="note.character != null">
       <h4>{{ note.character }}</h4>
       <p>{{ note.body }}</p>
     </div>
