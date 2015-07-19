@@ -54,9 +54,9 @@
   <li class="tab" ng-class="{active:tab === 4}"><a href ng-click="openNotes(4)">Character</a></li>
 </ul>
 
-<div class="tab-content">
+<section class="tab-content" id="notes">
   <div ng-show="tab === 1" class="tab-pane fade in active">
-    <h3>Recent Notes</h3>
+    <h3 class="text-center">Recent Notes</h3>
     <div ng-repeat="note in allNotes">
       <h4>{{ note.title }}</h4>
       <time>{{ note.created_on| date:'yyyy-MM-dd HH:mm:ss' }}</time>
@@ -64,14 +64,14 @@
     </div>
   </div>
   <div ng-show="tab === 2" class="tab-pane fade in active">
-    <h3>General Notes</h3>
+    <h3 class="text-center">General Notes</h3>
     <div ng-repeat="note in genNotes">
       <h4>{{ note.title }}</h4>
       <p>{{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
-    <h3>Page Notes</h3>
+    <h3 class="text-center">Page Notes</h3>
     <div ng-repeat="note in pageNotes | orderBy:'page'">
       <h4>{{ note.title }}</h4>
       <span>{{ note.page }}</span>
@@ -79,10 +79,10 @@
     </div>
   </div>
   <div ng-show="tab === 4" class="tab-pane fade in active">
-    <h3>Character Notes</h3>
+    <h3 class="text-center">Character Notes</h3>
     <div ng-repeat="note in charNotes | orderBy:'character'">
       <h4>{{ note.character }}</h4>
       <p>{{ note.body }}</p>
     </div>
   </div>
-</div>
+</section>
