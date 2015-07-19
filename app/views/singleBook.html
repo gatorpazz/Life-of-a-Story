@@ -57,7 +57,7 @@
 <section class="tab-content" id="notes">
   <div ng-show="tab === 1" class="tab-pane fade in active">
     <h3 class="text-center">Recent Notes</h3>
-    <div ng-repeat="note in allNotes">
+    <div ng-repeat="note in notes" ng-dblclick="deleteNote(note)">
       <h4>{{ note.title }}</h4>
       <time>{{ note.created_on| date:'yyyy-MM-dd HH:mm:ss' }}</time>
       <p>{{ note.body }}</p>
@@ -65,14 +65,14 @@
   </div>
   <div ng-show="tab === 2" class="tab-pane fade in active">
     <h3 class="text-center">General Notes</h3>
-    <div ng-repeat="note in genNotes">
+    <div ng-repeat="note in notes" ng-if="note.gen == 'gen'">
       <h4>{{ note.title }}</h4>
       <p>{{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3 class="text-center">Page Notes</h3>
-    <div ng-repeat="note in pageNotes | orderBy:'page'">
+    <div ng-repeat="note in notes" ng-if="note.pag == 'pag'">
       <h4>{{ note.title }}</h4>
       <span>{{ note.page }}</span>
       <p>{{ note.body }}</p>
@@ -80,7 +80,7 @@
   </div>
   <div ng-show="tab === 4" class="tab-pane fade in active">
     <h3 class="text-center">Character Notes</h3>
-    <div ng-repeat="note in charNotes | orderBy:'character'">
+    <div ng-repeat="note in notes" ng-if="note.char == 'char'">
       <h4>{{ note.character }}</h4>
       <p>{{ note.body }}</p>
     </div>
