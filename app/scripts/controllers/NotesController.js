@@ -36,6 +36,7 @@
           'body': null,
           'created_on': null
         };
+        $scope.button = null;
       };
       $scope.deleteNote = function(note) {
         $scope.notes.$remove(note);
