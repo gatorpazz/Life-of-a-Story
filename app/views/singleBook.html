@@ -1,0 +1,99 @@
+<section class="row well">
+  <div class="col-xs-12">
+    <div id="coverImage" class="col-xs-6">
+      <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="Book Image"></img>
+    </div>
+    <div class="col-xs-6">
+      <h4>{{ book.volumeInfo.title }}</h4>
+      <author>{{ book.volumeInfo.authors[0] }}</author>
+    </div>
+  </div>
+</section>
+<h1 class="text-center">Your Notes</h1>
+<h2 class="text-center">What would you like to remember?</h2>
+<section class="text-center">
+  <div class="btn-group" role="To select what type of note to create" aria-label="Note Creation Buttons">
+    <button type="button" class="btn btn-danger" ng-click="openNoteForm(1)">General Note</button>
+    <button type="button" class="btn btn-danger" ng-click="openNoteForm(2)">Page Note</button>
+    <button type="button" class="btn btn-danger" ng-click="openNoteForm(3)">Character Note</button>
+  </div>
+</section> <!--END BUTTON GROUP-->
+<form class="well" ng-show="button === 1" ng-submit="addNote()">
+  <h2 class="text-center">General Note</h2>
+  <div class="form-group loasForm">
+    <label for="noteTitle">Note Title</label>
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="note.title">
+    <label for="noteBody">Note Body</label>
+    <textarea class="form-control" name="noteBody" ng-model=note.body></textarea>
+    <button type="submit" class="btn btn-danger">Add Note!</button>
+  </div>
+</form><!--END GENERAL NOTE INPUT-->
+<form class="well" ng-show="button === 2" ng-submit="addNote()">
+  <h2 class="text-center">Page Note</h2>
+  <div class="form-group loasForm">
+    <label for="noteTitle">Note Title</label>
+    <input type="text" class="form-control" name="noteTitle" placeholder="Note Title" ng-model="note.title">
+    <label for="pageNumber">Page Number</label>
+    <input type="number" class="form-control" name="pageNumber" placeholder="Page Number" ng-model="note.page">
+    <label for="noteBody">Note Body</label>
+    <textarea class="form-control" name="noteBody" ng-model="note.body"></textarea>
+    <button type="submit" class="btn btn-danger">Add Note!</button>
+  </div>
+</form><!--END PAGE NOTE INPUT-->
+<form class="well" ng-show="button === 3" ng-submit="addNote()">
+  <h2 class="text-center">Character Note</h2>
+  <div class="form-group loasForm">
+    <label for="character">Character</label>
+    <input type="text" class="form-control" name="character" placeholder="Character Name" ng-model="note.character">
+    <label for="noteBody">Note Body</label>
+    <textarea class="form-control" name="noteBody" ng-model="note.body"></textarea>
+    <button type="submit" class="btn btn-danger">Add Note!</button>
+  </div>
+</form><!--END CHARACTER NOTE INPUT-->
+<ul class="nav nav-tabs" id="notesTabs">
+  <li class="tab" ng-class="{active:tab === 1}"><a href ng-click="openNotes(1)">Recent</a></li>
+  <li class="tab" ng-class="{active:tab === 2}"><a href ng-click="openNotes(2)">General</a></li>
+  <li class="tab" ng-class="{active:tab === 3}"><a href ng-click="openNotes(3)">Page</a></li>
+  <li class="tab" ng-class="{active:tab === 4}"><a href ng-click="openNotes(4)">Character</a></li>
+</ul>
+<section class="col-xs-12 tab-content" id="notes">
+  <div ng-show="tab === 1" class="tab-pane fade in active">
+    <h3 class="text-center">Recent Notes</h3>
+    <div class="note" ng-repeat="note in notes" ng-dblclick="deleteNote(note)">
+      <h3 ng-if="note.character != null">Character Note</h3>
+      <h3 ng-if="note.page != null">Page Note</h3>
+      <h3 ng-if="note.character == null && note.page == null">General Note</h3>
+      <h4 ng-if="note.title != null">Title: {{ note.title }}</h4>
+      <h4>{{ note.character }}</h4>
+      <p ng-if="note.page != null">Page: {{ note.page }}</p>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
+    </div>
+  </div>
+  <div ng-show="tab === 2" class="tab-pane fade in active">
+    <h3 class="text-center">General Notes</h3>
+    <div class="note" ng-repeat="note in notes" ng-if="note.character == null && note.page == null">
+      <h4>{{ note.title }}</h4>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
+    </div>
+  </div>
+  <div ng-show="tab === 3" class="tab-pane fade in active">
+    <h3 class="text-center">Page Notes</h3>
+    <div class="note" ng-repeat="note in notes | orderBy:'page'" ng-if="note.page != null">
+      <h4>{{ note.title }}</h4>
+      <p>Page: {{ note.page }}</p>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
+    </div>
+  </div>
+  <div ng-show="tab === 4" class="tab-pane fade in active">
+    <h3 class="text-center">Character Notes</h3>
+    <div class="note" ng-repeat="note in notes | orderBy:'character'" ng-if="note.character != null">
+      <h4>{{ note.character }}</h4>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
+    </div>
+  </div>
+  <span>*Double click notes to delete them</span>
+</section>

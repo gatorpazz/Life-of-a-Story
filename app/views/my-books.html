@@ -1,11 +1,15 @@
-<section class="row well">
-  <div class="col-xs-4">
-    <img alt="Book Image"></img>
-  </div>
-  <div class="col-xs-8">
-    <h4>Book Title</h4>
-    <author>Book Author</author>
-  </div>
+<section class="row well" ng-repeat="book in userBooks">
+  <a ui-sref="individualBook({book: book.$id})">
+    <div class="col-xs-12">
+      <div id="coverImage" class="col-xs-6">
+        <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="Book Image"></img>
+      </div>
+      <div class="col-xs-6">
+        <h4>{{ book.volumeInfo.title }}</h4>
+        <author>{{ book.volumeInfo.authors[0] }}</author>
+      </div>
+    </div>
+  </a>
 </section>
 <div class="text-center well">
   <a ui-sref="addBook" class="glyphicon glyphicon-plus"><br>Add New Book</a>

@@ -22,7 +22,7 @@
   <!-- endbuild -->
 </head>
 
-<body>
+<body ng-controller="UserController as user">
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -53,8 +53,11 @@
                         <li>
                           <a ui-sref="addBook">Add a Book</a>
                         </li>
-                        <li>
+                        <!--TODO<li>
                             <a href="#">Resources</a>
+                        </li>-->
+                        <li>
+                            <a id="logout" ui-sref="home" ng-click="logout()" class="text-center btn btn-danger">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -105,6 +108,9 @@
   <script src="scripts/controllers/UserController.js"></script>
   <script src="scripts/controllers/MySummaryController.js"></script>
   <script src="scripts/controllers/AddBookController.js"></script>
+  <script src="scripts/controllers/MyBooksController.js"></script>
+  <script src="scripts/controllers/NotesController.js"></script>
+  <script src="scripts/controllers/HomeController.js"></script>
   <!-- endbuild -->
 </body>
 

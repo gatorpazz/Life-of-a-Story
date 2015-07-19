@@ -3,18 +3,17 @@
   'use strict';
 
   angular.module('life-of-a-story', ['ui.router', 'firebase', 'restangular'])
-    .config(function($stateProvider, $urlRouterProvider) {
+    .config(function($stateProvider) {
 
-      $urlRouterProvider.otherwise('/home');
 
       $stateProvider
 
-      // HOME VIEW WITH LOGIN AND REGISTRATION
+      // HOME VIEW WITH LOGIN
         .state('home', {
           url: '/home',
           templateUrl: 'views/home.html',
-          controller: 'UserController',
-          controllerAs: 'user'
+          controller: 'HomeController',
+          controllerAs: 'home'
         })
         .state('registration', {
           url: '/registration',
@@ -22,7 +21,9 @@
         })
         .state('myBooks', {
           url: '/my-books',
-          templateUrl: 'views/my-books.html'
+          templateUrl: 'views/my-books.html',
+          controller: 'MyBooksController',
+          controllerAs: 'myBook'
         })
         .state('addBook', {
           url: '/add-a-book',
@@ -35,6 +36,12 @@
           templateUrl: 'views/my-summary.html',
           controller: 'MySummaryController',
           controllerAs: 'sum'
+        })
+        .state('individualBook', {
+          url: '/:book',
+          templateUrl: 'views/singleBook.html',
+          controller: 'NotesController',
+          controllerAs: 'note'
         });
     })
   .config(function(RestangularProvider) {
