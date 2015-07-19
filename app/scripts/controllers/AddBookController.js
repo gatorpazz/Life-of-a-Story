@@ -3,8 +3,11 @@
   'use strict';
 
   angular.module('life-of-a-story')
-    .controller('AddBookController', function($scope, Auth, $firebase, $http, $firebaseArray) {
+    .controller('AddBookController', function($scope, Auth, $firebase, $http, $firebaseArray, $state) {
       $scope.user = Auth.authStatus();
+      if($scope.user == null) {
+        $state.go('home');
+      };
       var ref = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books');
       var baseSearchUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
       $scope.userBooks = $firebaseArray(ref);
