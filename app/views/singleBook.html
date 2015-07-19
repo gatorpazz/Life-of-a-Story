@@ -50,42 +50,45 @@
     <button type="submit" class="btn btn-danger">Add Note!</button>
   </div>
 </form><!--END CHARACTER NOTE INPUT-->
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" id="notesTabs">
   <li class="tab" ng-class="{active:tab === 1}"><a href ng-click="openNotes(1)">Recent</a></li>
   <li class="tab" ng-class="{active:tab === 2}"><a href ng-click="openNotes(2)">General</a></li>
   <li class="tab" ng-class="{active:tab === 3}"><a href ng-click="openNotes(3)">Page</a></li>
   <li class="tab" ng-class="{active:tab === 4}"><a href ng-click="openNotes(4)">Character</a></li>
 </ul>
-
-<section class="tab-content" id="notes">
+<section class="col-xs-12 tab-content" id="notes">
   <div ng-show="tab === 1" class="tab-pane fade in active">
     <h3 class="text-center">Recent Notes</h3>
-    <div ng-repeat="note in notes" ng-dblclick="deleteNote(note)">
+    <div class="note" ng-repeat="note in notes" ng-dblclick="deleteNote(note)">
       <h4>{{ note.title }}</h4>
-      <time>{{ note.created_on| date:'yyyy-MM-dd HH:mm:ss' }}</time>
-      <p>{{ note.body }}</p>
+      <h4>{{ note.character }}</h4>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 2" class="tab-pane fade in active">
     <h3 class="text-center">General Notes</h3>
-    <div ng-repeat="note in notes" ng-if="note.character == null && note.page == null">
+    <div class="note" ng-repeat="note in notes" ng-if="note.character == null && note.page == null">
       <h4>{{ note.title }}</h4>
-      <p>{{ note.body }}</p>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3 class="text-center">Page Notes</h3>
-    <div ng-repeat="note in notes | orderBy:'page'" ng-if="note.page != null">
+    <div class="note" ng-repeat="note in notes | orderBy:'page'" ng-if="note.page != null">
       <h4>{{ note.title }}</h4>
-      <span>{{ note.page }}</span>
-      <p>{{ note.body }}</p>
+      <p>Page: {{ note.page }}</p>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
     </div>
   </div>
   <div ng-show="tab === 4" class="tab-pane fade in active">
     <h3 class="text-center">Character Notes</h3>
-    <div ng-repeat="note in notes | orderBy:'character'" ng-if="note.character != null">
+    <div class="note" ng-repeat="note in notes | orderBy:'character'" ng-if="note.character != null">
       <h4>{{ note.character }}</h4>
-      <p>{{ note.body }}</p>
+      <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
+      <p>Body: {{ note.body }}</p>
     </div>
   </div>
 </section>
