@@ -16,6 +16,16 @@
   margin-top: 3ex;
 }
 
+.tab a{
+  background: rgba(54, 25, 25, .5);
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  color: #CA4D49;
+  background-color: dimgrey;
+}
+
 .note {
   margin-bottom: 4ex;
   border-bottom: 0.5ex solid darkred;

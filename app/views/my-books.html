@@ -1,16 +1,17 @@
+<h1 class="text-center">My Books</h1>
 <section class="row well" ng-repeat="book in userBooks">
   <a ui-sref="individualBook({book: book.$id})">
-    <div class="col-xs-12">
-      <div id="coverImage" class="col-xs-6">
-        <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="Book Image"></img>
+    <div class="bookChoice">
+      <div class="bookImage pull-left">
+        <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
       </div>
-      <div class="col-xs-6">
-        <h4>{{ book.volumeInfo.title }}</h4>
-        <author>{{ book.volumeInfo.authors[0] }}</author>
-      </div>
+      <ul class="bookDetails list-group">
+        <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
+        <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author:</b> {{ book.volumeInfo.authors[0] }}</li>
+        <li class="list-group-item" ng-if="book.volumeInfo.publisher != null"><b>Publisher:</b> {{ book.volumeInfo.publisher }}</li>
+        <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
+      </ul>
     </div>
   </a>
 </section>
-<div class="text-center well">
-  <a ui-sref="addBook" class="glyphicon glyphicon-plus"><br>Add New Book</a>
-</div>
+<a ui-sref="addBook" class="btn btn-lg btn-danger btn-block"><br>Add New Book</a>
