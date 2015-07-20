@@ -45,6 +45,9 @@
               $scope.errorMessage = null;
             });
         }
+        $timeout( function(){
+          $('#booksSelection').modal('show');
+        },600, true );
       };
       $scope.specificSearchBooks = function() {
         if ($scope.specificQuery.isbn === '') {
