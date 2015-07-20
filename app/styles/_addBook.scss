@@ -1,0 +1,29 @@
+.modal-content {
+  background-color: ivory;
+  .modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+  }
+}
+.bookDetails {
+  float: right;
+  width: 70%;
+  li {
+    background-color: ivory;
+  }
+}
+.bookChoice {
+  overflow: auto;
+  p,
+  h4 {
+    clear: both;
+    margin-top: 2ex;
+  }
+}
+@media (max-width: 30em) {
+  .bookDetails {
+    margin-top: 1ex;
+    float: left;
+    margin-left: 0;
+  }
+}
