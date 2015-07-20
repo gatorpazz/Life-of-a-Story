@@ -1,4 +1,4 @@
-/* global angular Firebase */
+/* global angular Firebase $ */
 (function() {
   'use strict';
 
@@ -47,7 +47,7 @@
         }
         $timeout( function(){
           $('#booksSelection').modal('show');
-        },600, true );
+        }, 600, true );
       };
       $scope.specificSearchBooks = function() {
         if ($scope.specificQuery.isbn === '') {
@@ -72,7 +72,7 @@
       $scope.hideModal = function() {
           $('#confirmMessage').modal('hide');
           $timeout(function() {
-            $state.go('myBooks')
+            $state.go('myBooks');
           }, 500, true);
       };
     });
