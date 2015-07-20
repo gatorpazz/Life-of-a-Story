@@ -3,7 +3,7 @@
   'use strict';
 
   angular.module('life-of-a-story')
-    .controller('AddBookController', function($scope, Auth, $firebase, $http, $firebaseArray, $state) {
+    .controller('AddBookController', function($scope, Auth, $firebase, $http, $firebaseArray, $state, $timeout) {
       $scope.user = Auth.authStatus();
       if($scope.user == null) {
         $state.go('home');
@@ -45,6 +45,9 @@
               $scope.errorMessage = null;
             });
         }
+        $timeout( function(){
+          $('#booksSelection').modal('show');
+        },600, true );
       };
       $scope.specificSearchBooks = function() {
         if ($scope.specificQuery.isbn === '') {
@@ -65,6 +68,12 @@
       };
       $scope.confirmBook = function() {
         $scope.userBooks.$add($scope.confirm);
+      };
+      $scope.hideModal = function() {
+          $('#confirmMessage').modal('hide');
+          $timeout(function() {
+            $state.go('myBooks')
+          }, 500, true);
       };
     });
 })();
