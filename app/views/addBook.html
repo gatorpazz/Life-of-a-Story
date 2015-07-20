@@ -32,12 +32,16 @@
       <h2 class="text-center">{{ errorMessage }}</h2>
       <div class="modal-body well" ng-repeat="book in books.items">
         <a href="" ng-click="selectBook(book)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
-          <div>
-            <div>
+          <div class="bookChoice">
+            <div class="bookImage pull-left">
               <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
             </div>
-            <h4>{{ book.volumeInfo.title }}</h4>
-            <author>{{ book.volumeInfo.authors[0] }}</author>
+            <ul class="bookDetails list-group pull-right">
+              <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author:</b> {{ book.volumeInfo.authors[0] }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.publisher != null"><b>Publisher:</b> {{ book.volumeInfo.publisher }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
+            </ul>
           </div>
         </a>
       </div>

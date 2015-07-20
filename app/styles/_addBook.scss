@@ -2,3 +2,15 @@
     max-height: calc(100vh - 210px);
     overflow-y: auto;
 }
+.bookDetails {
+  margin-left: 2em;
+  width: 70%;
+}
+.bookChoice {
+  overflow: auto;
+}
+@media (max-width: 600px) {
+  .bookDetails {
+    margin-left: 0;
+  }
+}
