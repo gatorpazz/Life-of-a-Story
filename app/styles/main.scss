@@ -15,6 +15,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  #quote {
+    font-family: 'Quintessential', cursive;
+  }
+  main {
+    font-family: 'Architects Daughter', cursive;
+  }
+  nav.navbar {
+    font-family: 'Quintessential', cursive;
+  }
 }
 
 #logout {
@@ -27,7 +36,8 @@ form.well {
 
 label {
   color: #CA4D49;
-  font-size: 15pt;
+  font-size: 20pt;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
 .form-control {
   background-color: ivory;
@@ -44,8 +54,4 @@ label {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
-
-.text-outline {
-  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
