@@ -22,10 +22,11 @@ body {
 }
 
 form.well {
-  background-color: silver;
+  background-color: dimgray;
 }
 
 label {
+  color: #CA4D49;
   font-size: 15pt;
 }
 .form-control {
@@ -43,4 +44,8 @@ label {
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
+}
+
+.text-outline {
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
