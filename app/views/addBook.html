@@ -1,22 +1,22 @@
-<h1>Add a new Book!</h1>
-<form ng-submit="searchBooks()" role="Finding a book with title and author">
-  <div class="form-group loasForm">
+<h1 class="text-center">Add a new Book!</h1>
+<form class="well" ng-submit="searchBooks()" role="Finding a book with title and author">
+  <div class="form-group input-group-lg loasForm">
     <label for="title">Title</label>
     <input type="text" class="form-control" name="title" placeholder="Book Title" ng-model="query.title">
   </div>
-  <div class="form-group loasForm">
+  <div class="form-group input-group-lg loasForm">
     <label for="author">Author</label>
     <input type="text" class="form-control" name="author" placeholder="Book Author" ng-model="query.author">
   </div>
   <!-- Trigger the modal with a button -->
-  <button type="submit" class="btn btn-info btn-lg">Find Books!</button>
+  <button type="submit" class="btn btn-danger btn-block btn-lg">Find Books!</button>
 </form>
-<form ng-submit="specificSearchBooks()" role="Finding a book with isbn">
-  <div class="form-group loasForm">
+<form class="well" ng-submit="specificSearchBooks()" role="Finding a book with isbn">
+  <div class="form-group input-group-lg loasForm">
     <label for="isbn">ISBN</label>
     <input type="text" class="form-control" name="isbn" placeholder="ISBN Number" ng-model="specificQuery.isbn">
   </div>
-  <button type="submit" class="btn btn-info btn-lg">Find Specific Book!</button>
+  <button type="submit" class="btn btn-danger btn-block btn-lg">Find Specific Book!</button>
 </form>
 
 <!-- Modal -->
@@ -32,10 +32,16 @@
       <h2 class="text-center">{{ errorMessage }}</h2>
       <div class="modal-body well" ng-repeat="book in books.items">
         <a href="" ng-click="selectBook(book)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
-          <div>
-            <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
-            <h4>{{ book.volumeInfo.title }}</h4>
-            <author>{{ book.volumeInfo.authors[0] }}</author>
+          <div class="bookChoice">
+            <div class="bookImage pull-left">
+              <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+            </div>
+            <ul class="bookDetails list-group pull-right">
+              <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author:</b> {{ book.volumeInfo.authors[0] }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.publisher != null"><b>Publisher:</b> {{ book.volumeInfo.publisher }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
+            </ul>
           </div>
         </a>
       </div>
@@ -59,11 +65,19 @@
       </div>
       <div class="modal-body">
         <a href="" ng-click="confirmBook()" data-dismiss="modal" data-toggle="modal" data-target="#confirmMessage">
-          <div>
-          <img ng-src="{{ confirm.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
-          <h4>{{ confirm.volumeInfo.title }}</h4>
-          <author>{{ confirm.volumeInfo.authors[0] }}</author>
-        </div>
+          <div class="bookChoice">
+            <div class="bookImage pull-left">
+              <img ng-src="{{ confirm.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+            </div>
+            <ul class="bookDetails list-group pull-right">
+              <li class="list-group-item"><b>Title:</b> {{ confirm.volumeInfo.title }}</li>
+              <li class="list-group-item" ng-if="confirm.volumeInfo.authors[0] != null"><b>Author:</b> {{ confirm.volumeInfo.authors[0] }}</li>
+              <li class="list-group-item" ng-if="confirm.volumeInfo.publisher != null"><b>Publisher:</b> {{ confirm.volumeInfo.publisher }}</li>
+              <li class="list-group-item" ng-if="confirm.volumeInfo.publishedDate != null"><b>Published:</b> {{ confirm.volumeInfo.publishedDate }}</li>
+            </ul>
+            <h4 ng-if="confirm.volumeInfo.description != null">Description: </h4>
+            <p>{{ confirm.volumeInfo.description }}
+          </div>
         </a>
       </div>
       <div class="modal-footer">

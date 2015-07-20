@@ -15,14 +15,27 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Quintessential', cursive;
+  main {
+    font-family: 'Architects Daughter', cursive;
+  }
 }
 
 #logout {
   color: white;
 }
 
-form.well {
-  background-color: silver;
+.well {
+  background-color: dimgray;
+}
+
+label {
+  color: #CA4D49;
+  font-size: 20pt;
+  text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
+}
+.form-control {
+  background-color: ivory;
 }
 
 .loasForm {
