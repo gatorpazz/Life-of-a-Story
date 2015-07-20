@@ -21,6 +21,16 @@ body {
   }
 }
 
+a {
+  color: #CA4D49;
+  text-decoration: none;
+}
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 #logout {
   color: white;
 }

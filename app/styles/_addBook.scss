@@ -1,21 +1,12 @@
 .modal-content {
   background-color: ivory;
-  a {
-    color: #CA4D49;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #00a0c6;
-    text-decoration: none;
-    cursor: pointer;
-  }
   .modal-body {
     max-height: calc(100vh - 210px);
     overflow-y: auto;
   }
 }
 .bookDetails {
-  margin-left: 2em;
+  float: right;
   width: 70%;
   li {
     background-color: ivory;
@@ -29,8 +20,10 @@
     margin-top: 2ex;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 30em) {
   .bookDetails {
+    margin-top: 1ex;
+    float: left;
     margin-left: 0;
   }
 }

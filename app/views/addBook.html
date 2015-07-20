@@ -36,7 +36,7 @@
             <div class="bookImage pull-left">
               <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
             </div>
-            <ul class="bookDetails list-group pull-right">
+            <ul class="bookDetails list-group">
               <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
               <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author:</b> {{ book.volumeInfo.authors[0] }}</li>
               <li class="list-group-item" ng-if="book.volumeInfo.publisher != null"><b>Publisher:</b> {{ book.volumeInfo.publisher }}</li>
@@ -69,7 +69,7 @@
             <div class="bookImage pull-left">
               <img ng-src="{{ confirm.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
             </div>
-            <ul class="bookDetails list-group pull-right">
+            <ul class="bookDetails list-group">
               <li class="list-group-item"><b>Title:</b> {{ confirm.volumeInfo.title }}</li>
               <li class="list-group-item" ng-if="confirm.volumeInfo.authors[0] != null"><b>Author:</b> {{ confirm.volumeInfo.authors[0] }}</li>
               <li class="list-group-item" ng-if="confirm.volumeInfo.publisher != null"><b>Publisher:</b> {{ confirm.volumeInfo.publisher }}</li>
