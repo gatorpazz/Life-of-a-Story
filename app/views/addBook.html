@@ -32,14 +32,13 @@
       <h2 class="text-center">{{ errorMessage }}</h2>
       <div class="modal-body well" ng-repeat="book in books.items">
         <a href="" ng-click="selectBook(book)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
-          <figure>
-            <div
-            <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
-            <figcaption>
-              <h4>{{ book.volumeInfo.title }}</h4>
-              <author>{{ book.volumeInfo.authors[0] }}</author>
-            </figcaption>
-          </figure>
+          <div>
+            <div>
+              <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+            </div>
+            <h4>{{ book.volumeInfo.title }}</h4>
+            <author>{{ book.volumeInfo.authors[0] }}</author>
+          </div>
         </a>
       </div>
       <div class="modal-footer">
