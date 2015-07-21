@@ -1,9 +1,11 @@
-a.glyphicon {
-  font-size: 50pt;
+.anim {
+    opacity: 1;
 }
-.deleteBookButton {
-  border-radius: 50%
+.anim.ng-enter {
+    -webkit-transition: 1s;
+    transition: 1s;
+    opacity: 0;
 }
-button.glyphicon {
-  font-size: 20pt;
+.anim.ng-enter-active {
+    opacity: 1;
 }

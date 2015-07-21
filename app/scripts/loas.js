@@ -2,7 +2,7 @@
 (function() {
   'use strict';
 
-  angular.module('life-of-a-story', ['ui.router', 'firebase', 'restangular'])
+  angular.module('life-of-a-story', ['ui.router', 'firebase', 'restangular', 'ngAnimate'])
     .config(function($stateProvider) {
 
 
