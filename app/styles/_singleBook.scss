@@ -31,6 +31,13 @@
   border-bottom: 0.5ex solid darkred;
 }
 
+.deleteButton {
+  cursor: pointer;
+  font-size: 20pt;
+  margin-right: 0.7em;
+  color: red;
+}
+
 form h2 {
   margin-bottom: 2ex;
 }
