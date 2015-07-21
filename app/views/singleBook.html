@@ -58,7 +58,7 @@
   <li class="tab" ng-class="{active:tab === 3}"><a href ng-click="openNotes(3)">Page</a></li>
   <li class="tab" ng-class="{active:tab === 4}"><a href ng-click="openNotes(4)">Character</a></li>
 </ul>
-<section class="col-xs-12 tab-content" id="notes">
+<section class="tab-content" id="notes">
   <div ng-show="tab === 1" class="tab-pane fade in active">
     <h3 class="text-center">Recent Notes</h3>
     <div class="note" ng-repeat="note in notes" ng-dblclick="deleteNote(note)">
@@ -98,4 +98,30 @@
     </div>
   </div>
   <span>*Double click notes to delete them</span>
+</section>
+<button class="btn btn-danger btn-block btn-lg" id="deleteBookButton" data-toggle="modal" data-target="#confirmDeleteMessage">Delete this book</button>
+
+<section id="confirmDeleteMessage" class="modal fade" role="Confirmation Message">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Confirmation Message</h4>
+      </div>
+      <div class="modal-body" data-dismiss="modal">
+        <div>
+          <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+          <h4>Are you sure you want to delete {{ book.volumeInfo.title }}?</h4>
+          <p>Upon deletion it will be removed from your books and all notes written will be gone forever.</p>
+          <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" ng-click="deleteBook()">Goodbye book!</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
 </section>
