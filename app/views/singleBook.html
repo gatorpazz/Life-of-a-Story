@@ -59,9 +59,10 @@
   <li class="tab" ng-class="{active:tab === 4}"><a href ng-click="openNotes(4)">Character</a></li>
 </ul>
 <section class="tab-content" id="notes">
-  <div ng-show="tab === 1" class="tab-pane fade in active">
+  <div ng-show="tab === 1" class="tab-pane fade in active outline">
     <h3 class="text-center">Recent Notes</h3>
-    <div class="note" ng-repeat="note in notes" ng-dblclick="deleteNote(note)">
+    <div class="note" ng-repeat="note in notes">
+      <span class="deleteButton pull-right" ng-click="deleteNote(note)">X</span>
       <h3 ng-if="note.character != null">Character Note</h3>
       <h3 ng-if="note.page != null">Page Note</h3>
       <h3 ng-if="note.character == null && note.page == null">General Note</h3>
@@ -97,11 +98,10 @@
       <p>Body: {{ note.body }}</p>
     </div>
   </div>
-  <span>*Double click notes to delete them</span>
 </section>
 <button class="btn btn-danger btn-block btn-lg" id="deleteBookButton" data-toggle="modal" data-target="#confirmDeleteMessage">Delete this book</button>
 
-<section id="confirmDeleteMessage" class="modal fade" role="Confirmation Message">
+<section id="confirmDeleteMessage" class="modal fade" role="Confirmation Message"><!--Confirmation Message for Delete Book-->
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -124,4 +124,4 @@
     </div>
 
   </div>
-</section>
+</section><!--END Confirmation Message for Delete Book-->
