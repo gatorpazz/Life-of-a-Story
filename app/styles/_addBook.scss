@@ -13,6 +13,14 @@
     background-color: ivory;
   }
 }
+.bookImage {
+  height: 25ex;
+  width: 9em;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
 
 .bookChoice {
   overflow: auto;
@@ -34,6 +42,8 @@
 .obv:hover {
     background-color: darkred;
 }
-#banana {
+.banana {
+  clear: both;
   margin-top: 1ex;
+  color: black;
 }
