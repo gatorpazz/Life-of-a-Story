@@ -8,7 +8,6 @@
       <ul class="bookDetails list-group">
         <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
         <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author:</b> {{ book.volumeInfo.authors[0] }}</li>
-        <li class="list-group-item" ng-if="book.volumeInfo.publisher != null"><b>Publisher:</b> {{ book.volumeInfo.publisher }}</li>
         <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
       </ul>
     </div>
