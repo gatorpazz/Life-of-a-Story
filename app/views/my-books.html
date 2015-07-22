@@ -7,11 +7,11 @@
       </div>
       <ul class="bookDetails list-group">
         <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
-        <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null" ng-repeat="author in book.volumeInfo.authors"><b>Author:</b> {{ author }}</li>
+        <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author(s): </b><span ng-repeat="author in book.volumeInfo.authors">{{ author }} </li>
         <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
       </ul>
     </div>
-    <button id="banana" class="btn btn-lg btn-block">View your Notes</button>
+    <button class="btn btn-lg btn-block banana">View your Notes</button>
   </a>
 </section>
 <a ui-sref="addBook" class="btn btn-lg btn-danger btn-block"><br>Add New Book</a>
