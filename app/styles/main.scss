@@ -14,9 +14,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Quintessential', cursive;
-  main {
-    font-family: 'Architects Daughter', cursive;
+  h1, h2, h3, h4, .navbar-brand{
+    font-family: 'Quintessential', cursive;
+  }
+  .navbar, main {
+    font-family: 'Montserrat', sans-serif;
   }
 }
 

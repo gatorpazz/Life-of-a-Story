@@ -61,7 +61,7 @@
 <section class="tab-content" id="notes">
   <div ng-show="tab === 1" class="tab-pane fade in active outline">
     <h3 class="text-center">Recent Notes</h3>
-    <div class="note" ng-repeat="note in notes">
+    <div class="note well" ng-repeat="note in notes">
       <span class="deleteButton pull-right" ng-click="deleteNote(note)">X</span>
       <h3 ng-if="note.character != null">Character Note</h3>
       <h3 ng-if="note.page != null">Page Note</h3>
@@ -75,7 +75,7 @@
   </div>
   <div ng-show="tab === 2" class="tab-pane fade in active">
     <h3 class="text-center">General Notes</h3>
-    <div class="note" ng-repeat="note in notes" ng-if="note.character == null && note.page == null">
+    <div class="note wll" ng-repeat="note in notes" ng-if="note.character == null && note.page == null">
       <span class="deleteButton pull-right" ng-click="deleteNote(note)">X</span>
       <h4>{{ note.title }}</h4>
       <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
@@ -84,7 +84,7 @@
   </div>
   <div ng-show="tab === 3" class="tab-pane fade in active">
     <h3 class="text-center">Page Notes</h3>
-    <div class="note" ng-repeat="note in notes | orderBy:'page'" ng-if="note.page != null">
+    <div class="note well" ng-repeat="note in notes | orderBy:'page'" ng-if="note.page != null">
       <span class="deleteButton pull-right" ng-click="deleteNote(note)">X</span>
       <h4>{{ note.title }}</h4>
       <p>Page: {{ note.page }}</p>
@@ -94,7 +94,7 @@
   </div>
   <div ng-show="tab === 4" class="tab-pane fade in active">
     <h3 class="text-center">Character Notes</h3>
-    <div class="note" ng-repeat="note in notes | orderBy:'character'" ng-if="note.character != null">
+    <div class="note well" ng-repeat="note in notes | orderBy:'character'" ng-if="note.character != null">
       <span class="deleteButton pull-right" ng-click="deleteNote(note)">X</span>
       <h4>{{ note.character }}</h4>
       <time>Added: {{ note.created_on | date:'yyyy-MM-dd HH:mm:ss' }}</time>
