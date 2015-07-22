@@ -20,8 +20,7 @@
     "angularfire": "~1.1.2",
     "ui-router": "~0.2.15",
     "angular-animate": "~1.4.2",
-    "restangular": "~1.5.1",
-    "tinymce": "~4.2.2"
+    "restangular": "~1.5.1"
   },
   "devDependencies": {
     "chai": "~3.0.0",
