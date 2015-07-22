@@ -1,4 +1,4 @@
-<h1 class="text-center">Add a new Book!</h1>
+<h1 class="text-center topHeader">Add a new Book!</h1>
 <form class="well" ng-submit="searchBooks()" role="Finding a book with title and author">
   <div class="form-group input-group-lg loasForm">
     <label for="title">Title</label>
@@ -26,11 +26,11 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Books to Select</h4>
+        <button type="button" class="btn btn-danger btn-lg pull-right" data-dismiss="modal">Cancel</button>
+        <h2 class="modal-title">Books to Select</h2>
       </div>
       <h2 class="text-center">{{ errorMessage }}</h2>
-      <div class="modal-body well" ng-repeat="book in books.items">
+      <div class="modal-body well fuck" ng-repeat="book in books.items">
         <a href="" ng-click="selectBook(book)" data-toggle="modal" data-target="#bookConfirm" data-dismiss="modal">
           <div class="bookChoice">
             <div class="bookImage pull-left">
@@ -38,14 +38,15 @@
             </div>
             <ul class="bookDetails list-group">
               <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
-              <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author:</b> {{ book.volumeInfo.authors[0] }}</li>
+              <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null" ng-repeat="author in book.volumeInfo.authors"><b>Author:</b> {{ author }}</li>
               <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
             </ul>
           </div>
+          <button id="banana" class="btn btn-lg btn-block">Click to add!</button>
         </a>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger btn-lg" data-dismiss="modal">Cancel</button>
       </div>
     </div>
 
@@ -70,7 +71,7 @@
             </div>
             <ul class="bookDetails list-group">
               <li class="list-group-item"><b>Title:</b> {{ confirm.volumeInfo.title }}</li>
-              <li class="list-group-item" ng-if="confirm.volumeInfo.authors[0] != null"><b>Author:</b> {{ confirm.volumeInfo.authors[0] }}</li>
+              <li class="list-group-item" ng-if="confirm.volumeInfo.authors[0] != null" ng-repeat="author in confirm.volumeInfo.authors"><b>Author:</b> {{ author }}</li>
               <li class="list-group-item" ng-if="confirm.volumeInfo.publishedDate != null"><b>Published:</b> {{ confirm.volumeInfo.publishedDate }}</li>
             </ul>
             <h4 ng-if="confirm.volumeInfo.description != null">Description: </h4>
