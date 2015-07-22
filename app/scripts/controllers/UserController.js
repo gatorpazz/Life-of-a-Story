@@ -11,6 +11,11 @@
       $scope.authData = $scope.auth.$onAuth(function(authData) {
         return;
       })
+      $(document).ready(function() {
+        $(".navbar-nav li a").click(function(event) {
+          $(".navbar-collapse").collapse('hide');
+        });
+      });
       $scope.addUser = function() {
         $scope.auth.$onAuth(function(authData) {
           $scope.authData = authData;
