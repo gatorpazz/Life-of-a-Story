@@ -4,7 +4,6 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "_myBooks.scss";
 @import "_mySummary.scss";
 @import "_singleBook.scss";
 @import "_addBook.scss";
@@ -15,18 +14,28 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: 'Quintessential', cursive;
-  main {
-    font-family: 'Architects Daughter', cursive;
+  h1, h2, h3, h4, .navbar-brand{
+    font-family: 'Quintessential', cursive;
+  }
+  .navbar, main {
+    font-family: 'Montserrat', sans-serif;
   }
 }
 
+p.well {
+  color: white;
+}
+
+.topHeader {
+  margin-top: 3ex;
+}
+
 a {
-  color: #CA4D49;
+  color: black;
   text-decoration: none;
 }
 a:hover {
-  color: #00a0c6;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
@@ -40,7 +49,7 @@ a:hover {
 }
 
 label {
-  color: #CA4D49;
+  color: white;
   font-size: 20pt;
   text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
@@ -60,3 +69,89 @@ label {
   color: #000;
   padding: 0.2em 0;
 }
+
+.outline {
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+
+
+
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+    -moz-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
+.white {
+  color: white;
+}
+
+.btn-danger {
+  background-color: darkred;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html, body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  color: #9D9E95;
+  height: 13ex;
+  background-color: #222222;
+}
+#sourceCode {
+  color: purple;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */

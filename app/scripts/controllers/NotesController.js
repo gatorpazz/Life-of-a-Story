@@ -3,10 +3,11 @@
   'use strict';
 
   angular.module('life-of-a-story')
-    .controller('NotesController', function($scope, $firebase, Auth, $firebaseObject, $firebaseArray, $stateParams) {
+    .controller('NotesController', function($scope, $firebase, Auth, $firebaseObject, $firebaseArray, $stateParams, $http, $state) {
 
       $scope.user = Auth.authStatus();
       var books = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/');
+      $scope.books = $firebaseArray(books);
       $scope.book = $firebaseObject(books.child($stateParams.book));
       var notes = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '/notes/');
       $scope.notes = $firebaseArray(notes);
@@ -40,6 +41,12 @@
       };
       $scope.deleteNote = function(note) {
         $scope.notes.$remove(note);
+      };
+      $scope.deleteBook = function() {
+        $http.delete('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '.json')
+          .then(function() {
+            $state.go('myBooks');
+          });
       };
 
     }); // END GameResultController

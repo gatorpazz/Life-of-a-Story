@@ -14,15 +14,17 @@
 }
 #notesTabs {
   margin-top: 3ex;
+  margin-left: 1em;
 }
 
 .tab a{
+  color: white;
   background: rgba(54, 25, 25, .5);
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-  color: #CA4D49;
+  color: white;
   background-color: dimgrey;
 }
 
@@ -31,6 +33,16 @@
   border-bottom: 0.5ex solid darkred;
 }
 
+.deleteButton {
+  cursor: pointer;
+  font-size: 20pt;
+  margin-right: 0.7em;
+  color: red;
+}
+
 form h2 {
   margin-bottom: 2ex;
+}
+#deleteBookButton {
+  margin: 5ex 0 5ex 0;
 }
