@@ -8,7 +8,9 @@
       // create an instance of the authentication service
       $state.go('home');
       $scope.auth = Auth.magicAuth;
-      $scope.authData = null;
+      $scope.authData = $scope.auth.$onAuth(function(authData) {
+        return;
+      })
       $scope.addUser = function() {
         $scope.auth.$onAuth(function(authData) {
           $scope.authData = authData;
@@ -20,7 +22,6 @@
             });
             $state.go('my-summary');
           }
-          return $scope.authData;
         });
       }; // END addUser method
       $scope.login = function() {

@@ -57,9 +57,19 @@
                         <!--TODO<li>
                             <a href="#">Resources</a>
                         </li>-->
-                        <li role="separator" class="divider"></li>
-                        <li role="separator" class="divider"></li>
-                        <li>
+                        <li class="divider">
+                          <a class="divider"></a>
+                        </li>
+                        <li class="divider">
+                          <a class="divider"></a>
+                        </li>
+                        <li class="divider">
+                          <a class="divider"></a>
+                        </li>
+                        <li class="divider">
+                          <a class="divider"></a>
+                        </li>
+                        <li ng-if="authData !== null">
                             <a id="logout" ui-sref="home" ng-click="logout()" class="text-center btn btn-danger">Logout</a>
                         </li>
                     </ul>
