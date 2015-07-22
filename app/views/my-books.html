@@ -1,5 +1,5 @@
 <h1 class="text-center topHeader">My Books</h1>
-<section class="row well anim" ng-repeat="book in userBooks">
+<section class="row well anim obv" ng-repeat="book in userBooks">
   <a ui-sref="individualBook({book: book.$id})">
     <div class="bookChoice">
       <div class="bookImage pull-left">
@@ -11,6 +11,7 @@
         <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
       </ul>
     </div>
+    <button id="banana" class="btn btn-lg btn-block">View your Notes</button>
   </a>
 </section>
 <a ui-sref="addBook" class="btn btn-lg btn-danger btn-block"><br>Add New Book</a>
