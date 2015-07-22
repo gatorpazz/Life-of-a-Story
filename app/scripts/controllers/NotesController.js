@@ -44,7 +44,7 @@
       };
       $scope.deleteBook = function() {
         $http.delete('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books/' + $stateParams.book + '.json')
-          .then(function(){
+          .then(function() {
             $state.go('myBooks')
           });
       };

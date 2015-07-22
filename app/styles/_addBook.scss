@@ -3,6 +3,7 @@
   .modal-body {
     max-height: calc(100vh - 210px);
     overflow-y: auto;
+    clear: both;
   }
 }
 .bookDetails {
@@ -12,6 +13,15 @@
     background-color: ivory;
   }
 }
+.bookImage {
+  height: 25ex;
+  width: 9em;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .bookChoice {
   overflow: auto;
   p,
@@ -20,10 +30,20 @@
     margin-top: 2ex;
   }
 }
+
 @media (max-width: 30em) {
   .bookDetails {
     margin-top: 1ex;
     float: left;
     margin-left: 0;
   }
+}
+
+.obv:hover {
+    background-color: darkred;
+}
+.banana {
+  clear: both;
+  margin-top: 1ex;
+  color: black;
 }
