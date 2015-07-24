@@ -8,9 +8,8 @@
       // create an instance of the authentication service
       $state.go('home');
       $scope.auth = Auth.magicAuth;
-      $scope.authData = $scope.auth.$onAuth(function() {
-        return;
-      });
+      $scope.authData = null;
+      console.log($scope.authData);
       $(document).ready(function() {
         $('.navbar-nav li a').click(function() {
           $('.navbar-collapse').collapse('hide');
