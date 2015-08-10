@@ -59,6 +59,9 @@
               $scope.errorMessage = null;
             });
         }
+        $timeout( function(){
+          $('#booksSelection').modal('show');
+        }, 600, true );
       };
       $scope.selectBook = function(book) {
         $scope.confirm = book;
