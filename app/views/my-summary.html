@@ -2,7 +2,7 @@
   <h1 class="text-center topHeader">My Summary</h1>
   <div class="text-center">
     <img id="profilePic" ng-src="{{ user.google.profileImageURL }}" width="350" height="350"/>
-    <h4>Welcome {{ user.google.displayName }}, would you like to add a book?</h4>
+    <h4 id="welcomeMessage" class="well outline white">Welcome {{ user.google.displayName }}, would you like to add a book?</h4>
   </div>
-  <a ui-sref="addBook" class="btn btn-lg btn-danger col-xs-4 col-xs-offset-4">Add a Book</a>
+  <a ui-sref="addBook" class="btn btn-lg btn-danger col-xs-6 col-xs-offset-3">Add a Book</a>
 </section
