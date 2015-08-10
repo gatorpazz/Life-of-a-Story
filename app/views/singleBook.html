@@ -113,19 +113,19 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Confirmation Message</h4>
+        <button type="button" class="btn btn-danger btn-lg pull-right" data-dismiss="modal">Cancel</button>
+        <h2 class="modal-title">Confirmation Message</h4>
       </div>
       <div class="modal-body" data-dismiss="modal">
         <div>
           <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
           <h4>Are you sure you want to delete {{ book.volumeInfo.title }}?</h4>
           <p>Upon deletion it will be removed from your books and all notes written will be gone forever.</p>
-          <button type="button" class="btn btn-danger btn-block" data-dismiss="modal" ng-click="deleteBook()">Goodbye book!</button>
+          <button type="button" class="btn btn-danger btn-lg btn-block" data-dismiss="modal" ng-click="deleteBook()">Goodbye book!</button>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger btn-lg pull-right" data-dismiss="modal">Cancel</button>
       </div>
     </div>
 

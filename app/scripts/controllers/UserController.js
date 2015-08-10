@@ -11,7 +11,7 @@
       $scope.authData = Auth.authStatus();
       $('#logout').click(function() {
         $scope.authData = null;
-      })
+      });
       $(document).ready(function() {
         $('.navbar-nav li a').click(function() {
           $('.navbar-collapse').collapse('hide');
