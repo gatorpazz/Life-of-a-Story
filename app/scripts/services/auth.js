@@ -9,7 +9,7 @@
        magicAuth: $firebaseAuth(ref),
        googleLogin: function(){
          ref.authWithOAuthPopup('google', function(){
-           console.log('hello');
+           return;
          }, {remember: 'sessionOnly', scope: 'https://www.googleapis.com/auth/books'});
        },
        authStatus: function(){
@@ -17,7 +17,6 @@
        },
        googleLogout: function(){
          ref.unauth();
-         console.log('goodbye');
        }
      }; // END Auth return
    }); // END Auth factory

@@ -11,7 +11,6 @@
       var ref = new Firebase('https://life-of-a-story.firebaseio.com/users/' + $scope.user.uid + '/books');
       var baseSearchUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
       $scope.userBooks = $firebaseArray(ref);
-      console.log($scope.user);
       $scope.query = {
         'title': '',
         'author': ''
@@ -60,10 +59,12 @@
               $scope.errorMessage = null;
             });
         }
+        $timeout( function(){
+          $('#booksSelection').modal('show');
+        }, 600, true );
       };
       $scope.selectBook = function(book) {
         $scope.confirm = book;
-        console.log($scope.confirm);
         return $scope.confirm;
       };
       $scope.confirmBook = function() {

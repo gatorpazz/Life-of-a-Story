@@ -1,8 +1,8 @@
 .modal-content {
   background-color: ivory;
+  max-height: 100vh;
+  overflow-y: auto;
   .modal-body {
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
     clear: both;
   }
 }
