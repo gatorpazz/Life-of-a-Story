@@ -1,5 +1,27 @@
 <h1 class="text-center topHeader">My Books</h1>
-<section class="row well anim obv" ng-repeat="book in userBooks">
+<section class="text-center">
+  <h2>Sort by:
+  <div class="btn-group" role="To sort your books" aria-label="Sorting Options">
+    <button type="button" class="btn btn-danger" ng-click="sortBooks(1)">Title</button>
+    <button type="button" class="btn btn-danger" ng-click="sortBooks(2)">Author</button>
+  </div>
+</section> <!--END BUTTON GROUP-->
+<section class="row well obv" ng-show="button === 1" ng-repeat="book in userBooks | orderBy:'volumeInfo.title'">
+  <a ui-sref="individualBook({book: book.$id})">
+    <div class="bookChoice">
+      <div class="bookImage pull-left">
+        <img ng-src="{{ book.volumeInfo.imageLinks.smallThumbnail }}" alt="No Cover Photo" />
+      </div>
+      <ul class="bookDetails list-group">
+        <li class="list-group-item"><b>Title:</b> {{ book.volumeInfo.title }}</li>
+        <li class="list-group-item" ng-if="book.volumeInfo.authors[0] != null"><b>Author(s): </b><span ng-repeat="author in book.volumeInfo.authors">{{ author }} </li>
+        <li class="list-group-item" ng-if="book.volumeInfo.publishedDate != null"><b>Published:</b> {{ book.volumeInfo.publishedDate }}</li>
+      </ul>
+    </div>
+    <button class="btn btn-lg btn-block banana">View your Notes</button>
+  </a>
+</section>
+<section class="row well obv" ng-show="button === 2" ng-repeat="book in userBooks | orderBy:'volumeInfo.authors[0]'">
   <a ui-sref="individualBook({book: book.$id})">
     <div class="bookChoice">
       <div class="bookImage pull-left">

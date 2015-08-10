@@ -13,5 +13,9 @@
       $scope.deleteBook = function(book) {
         $scope.userBooks.$remove(book);
       };
+      $scope.button = 1;
+      $scope.sortBooks = function(value) {
+        $scope.button = value;
+      };
     }); // END MySummaryController
 })();
