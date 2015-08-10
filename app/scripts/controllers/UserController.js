@@ -33,7 +33,7 @@
         Auth.googleLogin();
       };
       $scope.checkAuth = function() {
-        console.log(Auth.authStatus());
+        return;
       };
       $scope.logout = function() {
         Auth.googleLogout();
