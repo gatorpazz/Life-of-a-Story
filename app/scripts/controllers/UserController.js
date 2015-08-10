@@ -1,4 +1,4 @@
-/* global angular Firebase */
+/* global angular Firebase $ */
 (function() {
   'use strict';
 
@@ -8,12 +8,11 @@
       // create an instance of the authentication service
       $state.go('home');
       $scope.auth = Auth.magicAuth;
-      $scope.authData = $scope.auth.$onAuth(function(authData) {
-        return;
-      })
+      $scope.authData = null;
+      console.log($scope.authData);
       $(document).ready(function() {
-        $(".navbar-nav li a").click(function(event) {
-          $(".navbar-collapse").collapse('hide');
+        $('.navbar-nav li a').click(function() {
+          $('.navbar-collapse').collapse('hide');
         });
       });
       $scope.addUser = function() {
@@ -41,9 +40,3 @@
 
     }); // END UserController
 })();
-
-/*ref.child("users").child(authData.uid).set({
-  provider: authData.provider,
-  name: authData.google.displayName,
-  image: authData.google.profileImageURL
-});*/
