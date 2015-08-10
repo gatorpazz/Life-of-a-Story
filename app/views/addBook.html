@@ -80,7 +80,7 @@
               <li class="list-group-item" ng-if="confirm.volumeInfo.authors[0] != null"><b>Author(s):</b> <span ng-repeat="author in confirm.volumeInfo.authors">{{ author }} </span></li>
               <li class="list-group-item" ng-if="confirm.volumeInfo.publishedDate != null"><b>Published:</b> {{ confirm.volumeInfo.publishedDate }}</li>
             </ul>
-            <h4 ng-if="confirm.volumeInfo.description != null">Description: </h4>
+            <h4 class="outline white" ng-if="confirm.volumeInfo.description != null">Description: </h4>
             <p class="white outline">{{ confirm.volumeInfo.description }}</p>
             <button class="btn btn-lg btn-block banana">Click to add!</button>
           </div>
